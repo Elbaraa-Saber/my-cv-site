@@ -12,6 +12,8 @@
     left: 80px;
     top: 50%;
     transform: translateY(-50%);
+    // border: 5px solid $SystemBlue4Color;
+    box-shadow: 3px 3px 3px 3px $SystemBlue4Color;
 }
 .aboutMe__txt{
     width: 60%;
@@ -20,41 +22,33 @@
     top: 50%;
     transform: translateY(-50%);
     .aboutMe__name{
-        // font-size: 50px;
-        // font-weight: bolder;
         @include RegularHeaderBigBold;
         margin: 0 0 0px 0;
         color: $SystemBlue6Color;
         text-align: center;
     }
     .aboutMe__work{
-        font-size: 20px;
+        @include RegularMainFont2;
         margin: 0px 0 10px 0;
-        font-weight: bold;
-        color: $SystemBlue4Color;
+        color: $SystemBlue3Color;
     }
-
     .aboutMe__intro{
-        font-size: 20px;
-        font-weight: 400;
-        color: $SystemDarkColor;
+        @include RegularParagraph1;
+        color: $SystemBlue6Color;
         text-align: left;
         margin-bottom: 10px;
     }
     .aboutMe__langueges{
-        font-size: 20px;
-        font-weight: 400;
-        color: $SystemDarkColor;
+        @include RegularParagraph1;
+        color: $SystemBlue6Color;
         text-align: left;
         margin-bottom: 10px;
     }
     .aboutMe__softSkills{
-        font-size: 20px;
-        font-weight: 500;
-        color: $SystemDarkColor;
+        @include RegularParagraph1;
+        color: $SystemBlue6Color;
         text-align: left;
         margin-bottom: 10px;
-        // text-decoration: underline;
     }
     .aboutMe__techSkills{
         display: flex;
@@ -63,8 +57,13 @@
         justify-content: center;
     }
     .aboutMe__mySkills{
-        font-size: 30px;
-        font-weight: bold;
-        color: $SystemDarkColor;
+        @include MainScriptSmall;
+        color: $SystemBlue6Color;
+        border: 2px solid $SystemBlue6Color;
+        border-radius: 15px;
+        width: fit-content;
+        text-align: center;
+        margin: 50px auto 20px;
+        padding: 10px 7px;
     }
 }

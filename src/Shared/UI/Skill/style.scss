@@ -5,8 +5,10 @@
     color: $SystemBlue3Color;
     padding: 7px 10px;
     border-radius: 10px;
-    font-size: 17px;
-    font-weight: 600;
+    // font-size: 17px;
+    // font-weight: 600;
+    // @include RegularParagraph2;
+    @include RegularHeaderBold;
     transition: 0.5s;
     &:hover{
         transform: scale(1.2);

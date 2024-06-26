@@ -13,8 +13,10 @@ interface Props {
 export const BoxProject = ({label, link, withTeam, explain, className}: Props) => {
     return(
         <div className={`boxProject ${className}`}>
-            <h3 className="boxProject__title">{explain}</h3>
-            <div className="boxProject__creator">{withTeam ? "Сделано командой" : 'Сделано мной'} на стажировке</div>
+            <div className="    ">
+                <h3 className="boxProject__title">{explain}</h3>
+                <div className="boxProject__creator">{withTeam ? "Сделано командой" : 'Сделано мной'} на стажировке</div>
+            </div>
             <NavLink className='boxProject__link' to={link}>Go to <span>{label}</span></NavLink>
         </div>
     )

@@ -6,7 +6,10 @@ $SystemBlue3Color: #4A97B3;
 $SystemBlue4Color: #3C7A91;
 $SystemBlue5Color: #2E5E6F;
 $SystemBlue6Color: #20414D;
-$SystemYellowColor: rgb(255 230 0 / 60%);
+
+$SystemYellowColor: rgb(255 230 0 );
+$SystemYellow2Color: rgb(255 230 0 / 80%);
+
 $SystemDarkColor: #2a2a2a;
 $SystemDark2Color: rgb(42 42 42 / 80%);
 // $SystemBrown2Color: #593E25;
@@ -18,6 +21,30 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
     font-style: normal;
 }
 
+@font-face{
+    font-family: 'PTSerif';
+    src: url('./Assest/Font/PTSerif/PTSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'PTSerif';
+    src: url('./Assest/Font/PTSerif/PTSerif-Regular.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'PTSerif';
+    src: url('./Assest/Font/PTSerif/PTSerif-BoldItalic.ttf');
+    font-weight: bolder;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Robot';
+    src: url('./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
 @font-face{
     font-family: 'Robot';
     src: url('./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf');
@@ -51,6 +78,25 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
 
 // headers
 
+@mixin RegularHeaderMediumBold{
+    font-family: 'Robot';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+@mixin RegularHeaderMedium600{
+    font-family: 'Robot';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+}
+@mixin RegularHeaderMediumBold2{
+    font-family: 'Robot';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+}
 @mixin RegularHeaderBolder{
     font-family: 'Robot';
     font-size: 40px;
@@ -59,10 +105,17 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
 }
 @mixin RegularHeaderBold{
     font-family: 'Robot';
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
     font-weight: bold;
 }
+@mixin RegularHeaderBold25{
+    font-family: 'Robot';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+}
+
 @mixin RegularHeaderBigBold{
     font-family: 'Robot';
     font-size: 50px;
@@ -72,9 +125,39 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
 
 // regular
 
+@mixin RegularParagraphBold{
+    font-family: 'PTSerif';
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+@mixin RegularParagraph2{
+    font-family: 'PTSerif';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+@mixin RegularParagraph1{
+    font-family: 'PTSerif';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+}
 @mixin RegularMainFont1{
     font-family: 'Robot';
-    font-size: 18px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+@mixin RegularMainFont2{
+    font-family: 'Robot';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+}
+@mixin RegularMainFont3{
+    font-family: 'Robot';
+    font-size: 30px;
     font-style: normal;
     font-weight: bold;
 }
@@ -83,7 +166,7 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
 
 @mixin MainScriptBig {
     font-family: "NanumBrushScript";
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 400;
     line-height: 40.57px;
     text-align: center;
@@ -91,6 +174,13 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
 @mixin MainScriptNorm {
     font-family: "NanumBrushScript";
     font-size: 40px;
+    font-weight: 400;
+    line-height: 40.57px;
+    text-align: center;
+}
+@mixin MainScriptSmall {
+    font-family: "NanumBrushScript";
+    font-size: 30px;
     font-weight: 400;
     line-height: 40.57px;
     text-align: center;

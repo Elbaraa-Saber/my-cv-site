@@ -23,7 +23,7 @@ export const AboutMe = () => {
           У меня отличные коммуникативные навыки, я хорошо взаимодействую в
           команде и предпочитаю работать в коллективе, а не в одиночку.
         </p>
-        <h2 className="aboutMe__mySkills">My Skills</h2>
+        <h2 className="aboutMe__mySkills">Мои навыки</h2>
         <p className="aboutMe__techSkills">
           <Skill skill="React" /><Skill skill="JavaScript" />
           <Skill skill="TypeScript" /><Skill skill="HTML" />
