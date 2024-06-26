@@ -1,3 +1,5 @@
+@import '../../Shared/Style/GeneralStyle.scss';
+
 .myProjects{
     padding: 50px;
     margin-top: 50px;
@@ -5,11 +7,21 @@
 
 .myProjects__boxes{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 30px;
     margin: auto;
-    width: 860px;
 }
 .myProjects__box{
     margin: auto;
+}
+
+@media (max-width: $BigMobile){
+    .myProjects__boxes{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+@media (max-width: $Mobile){
+    .myProjects__boxes{
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
 }

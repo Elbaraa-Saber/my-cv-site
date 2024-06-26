@@ -46,3 +46,26 @@
         }
     }
 }
+
+@media (max-width: $BigMobile){
+    .boxProject{
+        width: 250px;
+    }
+    .boxProject__title{
+        @include RegularParagraph1;
+    }
+    .boxProject__creator{
+        @include RegularParagraph2;
+    }
+    .boxProject__link{
+        @include RegularMainFont1;
+        span{
+            font-size: 22px;
+        }
+    }
+}
+@media (max-width: $Mobile){
+    .boxProject{
+        width: 215px;
+    }
+}

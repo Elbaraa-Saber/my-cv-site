@@ -2,11 +2,16 @@
 
 .experience{
     margin-top: 80px;
+    height: fit-content;
 }
 .experience__content{
+    height: fit-content;
     text-align: left;
-    position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 .experience__company{
     background-color: $SystemBlue3Color;
@@ -31,12 +36,71 @@
     border-radius: 0 50px 50px 0;
 }
 .experience__txt{
-    position: absolute;
-    top: 50%;
     width: 45%;
-    right: 0px;
     text-align: left;
-    transform: translateY(-50%);
     color: $SystemBlue6Color;
     @include RegularParagraph1;
+}
+
+@media (max-width: $LaptopWidth){
+    .experience__content{
+        flex-direction: column;
+    }
+    .experience__company{
+        border-radius: 100px;
+        padding: 30px 15px 30px 15px;
+        text-align: center;
+        margin: auto;
+        .experience__companyName{
+            margin: 0 auto 10px;
+        }
+        .experience__team{
+            margin: 10px auto 0;
+        }
+    }
+    .experience__img {
+        border-radius: 50px;
+    }
+    .experience__txt{
+        width: 80%;
+        text-align: center;
+    }
+}
+@media (max-width: $IpadWidth){
+    .experience__company{
+        width: 500px;
+    }
+    .experience__img {
+        width: 400px;
+        border-radius: 50px;
+    }
+
+}
+@media (max-width: $BigMobile){
+    .experience__company{
+        width: 340px;
+        border-radius: 30px;
+    }
+    .experience__img {
+        width: 300px;
+        border-radius: 15px;
+    }
+    .experience__companyName{
+        @include RegularMainFont1;
+    }
+    .experience__team{
+        @include RegularParagraph2;
+    }
+}
+
+@media (max-width: $Mobile) {
+    .experience__company{
+        width: 300px;
+    }
+    .experience__img{
+        width: 270px;
+    }
+    .aboutMe__txt .aboutMe__techSkills {
+        gap: 3px;
+    }
 }

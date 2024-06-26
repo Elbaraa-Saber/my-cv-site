@@ -101,3 +101,17 @@
         color: $SystemWhiteColor;
     }
 }
+
+@media(max-width: $BigMobile){
+    .footer__right{
+        .footer__egyptIcons {
+            gap: 15px;
+        }
+    }
+}
+@media(max-width: $IpadWidth){
+    .footer{
+        flex-direction: column;
+        gap: 50px;
+    }
+}

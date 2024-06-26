@@ -17,3 +17,16 @@
         border: 1px solid $SystemBlueColor;
     }
 }
+@media (max-width: $BigMobile){
+    .skill{
+        padding: 2px 5px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: $Mobile){
+    .skill{
+        padding: 1px 2px;
+    }
+}

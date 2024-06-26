@@ -51,3 +51,23 @@
         }
     }
 }
+
+@media (max-width: $Mobile){
+    .title{
+        padding: 10px 15px;
+        &::after{
+            left: -35px;
+        }
+        &::before{
+            right: -35px;
+        }
+        &:hover{
+            &::after{
+                background-color: transparent;
+            }
+            &::before{
+                background-color: transparent;
+            }
+        }
+    }
+}

@@ -14,6 +14,14 @@ $SystemDarkColor: #2a2a2a;
 $SystemDark2Color: rgb(42 42 42 / 80%);
 // $SystemBrown2Color: #593E25;
 
+
+//widht for adaptev
+$TvWidth: 1200px;
+$LaptopWidth: 991px;
+$IpadWidth: 776px;
+$BigMobile: 500px;
+$Mobile: 400px;
+
 @font-face {
   font-family: "NanumBrushScript";
   src: url("./Assest/Font/Nanum_Brush_Script/NanumBrushScript-Regular.ttf");
@@ -137,11 +145,23 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
   font-style: normal;
   font-weight: 400;
 }
+@mixin RegularParagraph3 {
+  font-family: "PTSerif";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
 @mixin RegularParagraph1 {
   font-family: "PTSerif";
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
+}
+@mixin RegularMainFont1 {
+  font-family: "Robot";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
 }
 @mixin RegularMainFont1 {
   font-family: "Robot";
@@ -161,12 +181,25 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
   font-style: normal;
   font-weight: bold;
 }
+@mixin RegularMainFont4 {
+  font-family: "Robot";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
 
 // not normal
 
-@mixin MainScriptBig {
+@mixin MainScriptOverBig {
   font-family: "NanumBrushScript";
   font-size: 100px;
+  font-weight: 400;
+  line-height: 40.57px;
+  text-align: center;
+}
+@mixin MainScriptBig {
+  font-family: "NanumBrushScript";
+  font-size: 70px;
   font-weight: 400;
   line-height: 40.57px;
   text-align: center;
@@ -181,6 +214,13 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
 @mixin MainScriptSmall {
   font-family: "NanumBrushScript";
   font-size: 30px;
+  font-weight: 400;
+  line-height: 40.57px;
+  text-align: center;
+}
+@mixin MainScriptOverSmall {
+  font-family: "NanumBrushScript";
+  font-size: 25px;
   font-weight: 400;
   line-height: 40.57px;
   text-align: center;

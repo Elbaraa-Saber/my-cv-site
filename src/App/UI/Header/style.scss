@@ -1,89 +1,188 @@
-@import '../../../Shared/Style/GeneralStyle.scss';
+@import "../../../Shared/Style/GeneralStyle.scss";
 
-.header{
-    position: fixed;
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  transition: 0.5s;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &.header-show {
+    background-color: $SystemDarkColor;
+    .header__infoBox {
+      background-color: transparent;
+    }
+  }
+  &.header-hide {
+    background-color: transparent;
+    height: 100vh;
     width: 100%;
-    padding: 10px 0;
-    transition: 0.5s;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    &.header-show{
-        background-color: $SystemDarkColor;
-        .header__infoBox{
-            background-color: transparent;
+    // top: calc(100vh - 100px);
+    .header__img {
+      display: none;
+    }
+    .header__left {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      .header__name {
+        margin: 0 auto;
+        letter-spacing: -0.5px;
+        color: $SystemBlue5Color;
+      }
+      .header__work {
+        color: $SystemBlue5Color;
+        @include MainScriptNorm;
+      }
+    }
+    .header__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      align-items: flex-end;
+      gap: 20px;
+      position: absolute;
+      bottom: 50px;
+      right: 50px;
+      .header__infoBox {
+        padding: 12px 8px;
+      }
+    }
+  }
+}
+.header__img {
+  width: 85px;
+  border-radius: 50%;
+  border: 4px solid $SystemBlue5Color;
+  transition: 0.5s;
+  &:hover {
+    border-color: $SystemBlue3Color;
+  }
+}
+.header__name {
+  @include RegularHeaderBolder;
+  margin: 0 auto;
+  letter-spacing: -0.5px;
+  color: $SystemWhiteColor;
+}
+.header__work {
+  margin: 0;
+  // font-size: 20px;
+  // font-weight: 500;
+  @include MainScriptNorm;
+  color: $SystemBlue3Color;
+}
+.header__infoBox {
+  background-color: $SystemDarkColor;
+  border-radius: 20px;
+  transition: 0.5s;
+  .header__info {
+    @include RegularMainFont1;
+    color: $SystemBlueColor;
+    margin: 5px auto;
+  }
+  a.header__info {
+    text-decoration: none;
+  }
+}
+
+
+@media  (max-width: $TvWidth) {
+    .header{
+        &.header-hide{
+            .header__right {
+                bottom: 150px;
+                right: 70px;
+            }
         }
     }
-    &.header-hide{
-        background-color: transparent;
-        height: 100vh;
-        width: 100%;
-        // top: calc(100vh - 100px);
-        .header__img{
-            display: none;
+}
+@media  (max-width: $LaptopWidth) {
+    .header{
+        &.header-hide{
+            background-color: transparent;
+            height: 70vh;
+            width: 100%;
+            .header__right {
+                bottom: 50px;
+                right: 70px;
+                .header__infoBox {
+                    padding: 9px 6px;
+                    .header__info{
+                        @include RegularParagraph2;
+                    }
+                }
+            }
+            .header__left{
+                display: none;
+            }
+        }
+    }
+}
+@media  (max-width: $IpadWidth) {
+    .header{
+        &.header-hide{
+            height: 50vh;
+            .header__right {
+                bottom: 40px;
+                right: 30px;
+                gap: 8px;
+                .header__infoBox {
+                    padding: 3px 8px;
+                    .header__info{
+                        @include RegularParagraph3;
+                    }
+                }
+            }
         }
         .header__left{
-            position: absolute;
-            top: 50px;
-            left: 50px;
             .header__name{
-                margin: 0 auto;
-                letter-spacing: -0.5px;
-                color: $SystemBlue5Color;
+                @include RegularHeaderMediumBold;
             }
             .header__work{
-                color: $SystemBlue5Color;
-                @include MainScriptNorm;
+                @include MainScriptOverSmall;
             }
         }
-        .header__right{
-            display: flex;
-            flex-direction: column;
-            justify-content: right;
-            align-items: flex-end;
-            gap: 20px;
-            position: absolute;
-            bottom: 50px;
-            right: 50px;
-            .header__infoBox{
-                padding: 12px 8px;
+        .header__right {
+            .header__infoBox {
+                .header__info{
+                    @include RegularParagraph2;
+                }
             }
         }
     }
 }
-.header__img{
-    width: 85px;
-    border-radius: 50%;
-    border: 4px solid $SystemBlue5Color;
-    transition: 0.5s;
-    &:hover {
-        border-color: $SystemBlue3Color;
+@media  (max-width: $BigMobile) {
+    .header{
+        &.header-hide{
+            height: 0px;
+            .header__right {
+                display: none;
+            }
+        }
+        .header__left{
+            .header__name{
+                @include RegularHeaderMediumBold;
+            }
+            .header__work{
+                @include MainScriptOverSmall;
+            }
+        }
+        .header__right {
+            display: none;
+            .header__infoBox {
+                .header__info{
+                    @include RegularParagraph2;
+                }
+            }
+        }
     }
 }
-.header__name{
-    @include RegularHeaderBolder;
-    margin: 0 auto;
-    letter-spacing: -0.5px;
-    color: $SystemWhiteColor;
-}
-.header__work{
-    margin: 0;
-    // font-size: 20px;
-    // font-weight: 500;
-    @include MainScriptNorm;
-    color: $SystemBlue3Color;
-}
-.header__infoBox{
-    background-color: $SystemDarkColor;
-    border-radius: 20px;
-    transition: 0.5s;
-    .header__info{
-        @include RegularMainFont1;
-        color: $SystemBlueColor;
-        margin: 5px auto;
-    }
-    a.header__info{
-        text-decoration: none;
-    }
-}
+// @media(max-width: $Mobile){
+//   .header{
+//     top: 35px;
+//   }
+// }
