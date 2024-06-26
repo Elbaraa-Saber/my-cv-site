@@ -39,10 +39,10 @@ export const Header = () => {
             <Img imgSrc={logo} imgAlt='mylog' className="header__img"/>
             <div className="header__right">
                 <div className="header__infoBox">
-                    <span className="header__info">+7 996 692 5268</span>
+                    <span className="header__info">Россия, Томск</span>
                 </div>
                 <div className="header__infoBox">
-                    <span className="header__info">Россия, Томск</span>
+                    <span className="header__info">+7 996 692 5268</span>
                 </div>
                 <div className="header__infoBox">
                     <a href="mailto:baraasaber22@gmail.com" className="header__info">baraasaber22@gmail.com</a>

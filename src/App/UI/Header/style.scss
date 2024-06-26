@@ -17,27 +17,37 @@
     }
     &.header-hide{
         background-color: transparent;
-        top: calc(100vh - 100px);
+        height: 100vh;
+        width: 100%;
+        // top: calc(100vh - 100px);
         .header__img{
             display: none;
         }
         .header__left{
-            display: none;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            .header__name{
+                margin: 0 auto;
+                letter-spacing: -0.5px;
+                color: $SystemBlue5Color;
+            }
+            .header__work{
+                color: $SystemBlue5Color;
+                @include MainScriptNorm;
+            }
         }
         .header__right{
             display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            width: 100%;
-            position: relative;
+            flex-direction: column;
+            justify-content: right;
+            align-items: flex-end;
+            gap: 20px;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
             .header__infoBox{
                 padding: 12px 8px;
-            }
-            .header__infoBox:nth-child(2){
-                position: absolute;
-                top: -30px;
-                transform: translateX(-50%);
-                left: 50%;
             }
         }
     }
@@ -52,36 +62,28 @@
     }
 }
 .header__name{
-    font-size: 30px;
-    font-weight: bold;
+    @include RegularHeaderBolder;
     margin: 0 auto;
     letter-spacing: -0.5px;
     color: $SystemWhiteColor;
 }
 .header__work{
     margin: 0;
-    font-size: 20px;
-    font-weight: 500;
+    // font-size: 20px;
+    // font-weight: 500;
+    @include MainScriptNorm;
     color: $SystemBlue3Color;
 }
 .header__infoBox{
-    background-color: $SystemDark2Color;
+    background-color: $SystemDarkColor;
     border-radius: 20px;
     transition: 0.5s;
-    &:hover{
-        background-color: $SystemDarkColor;
-    }
     .header__info{
-        font-size: 17px;
-        font-weight: bold;
-        // color: $SystemWhiteColor;
-        color: $SystemBlue3Color;
+        @include RegularMainFont1;
+        color: $SystemBlueColor;
         margin: 5px auto;
     }
     a.header__info{
         text-decoration: none;
-        &:hover{
-            color: $SystemBlueColor;
-        }
     }
 }
