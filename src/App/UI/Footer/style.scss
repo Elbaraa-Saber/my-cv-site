@@ -9,9 +9,10 @@
     margin-top: 100px;
 }
 .footer__title{
-    text-align: left;
-    font-size: 35px;
-    font-weight: 600;
+    // text-align: left;
+    // font-size: 35px;
+    // font-weight: 600;
+    @include RegularHeaderMediumBold2;  
     color: $SystemBlueColor;
     margin: 10px 0;
 }
@@ -21,7 +22,7 @@
     align-items: center;
     flex-direction: column;
     .footer__box {
-        font-size: 20px;
+        @include RegularParagraph2;
         display: flex;
         align-items: center;
         gap: 15px;
@@ -29,9 +30,6 @@
     }
     a.footer__box{
         text-decoration: none;
-    }
-    .footer__vkIcon{
-        letter-spacing: -3px;
     }
 }
 
@@ -49,21 +47,20 @@
         // color: $SystemYellowColor;
     }
     .footer__egypt{
-        font-size: 20px;
-        font-weight: 600;
+        // font-size: 20px;
+        // font-weight: 600;
+        @include RegularParagraph1;
         color: $SystemWhiteColor;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
+        color: red;
         span{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-            font-size: 25px;
-            font-weight: 700;
-            color: $SystemYellowColor;
+            color: $SystemWhiteColor;
+        }
+        .footer__egyptianFlag{
+            color: black;
         }
     }
     .footer__egyptIcons{
@@ -79,21 +76,28 @@
         .icon:nth-child(5),
         .icon:nth-child(7)
         {
-            color: $SystemYellowColor;
+            color: $SystemYellow2Color;
+            &:hover {
+                color: $SystemYellowColor;
+            }
         }
         .icon:nth-child(2),
         .icon:nth-child(4),
         .icon:nth-child(6){
-            color: $SystemBlueColor;
+            color: $SystemBlue3Color;
+            &:hover{
+                color: $SystemBlueColor;
+            }
         }
     }
     .footer__russia{
-        font-size: 20px;
+        @include RegularMainFont2;
+        // font-size: 20px;
+        // font-weight: 600;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
-        font-weight: 600;
         color: $SystemWhiteColor;
     }
 }

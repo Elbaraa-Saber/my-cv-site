@@ -19,34 +19,33 @@ export const Footer = () => {
       <div className="footer__contact">
         <div className="footer__title">Свяжитесь с нами</div>
         <div className="footer__contactBoxes">
-          <span className="footer__box">
-            +7 996 692 5268
-            <CiMobile1 />
-          </span>
           <a href="mailto:baraasaber22@gmail.com" className="footer__box">
             Общая рабоча почта
             <MdOutlineEmail />
           </a>
+          <span className="footer__box">
+            +7 996 692 5268
+            <CiMobile1 />
+          </span>
           <a href="mailto:elbarsalem@mail.ru" className="footer__box">
             Русская почта
             <MdAlternateEmail />
-          </a>
-          <a href="https://vk.com/id615489202" className="footer__box">
-            VK
-            <span className="footer__vkIcon">ВК</span>
           </a>
           <a
             href="https://www.instagram.com/baraasaber1/"
             className="footer__box"
           >
-            Instgram
+            Инстграм
             <FaInstagram/>
+          </a>
+          <a href="https://vk.com/id615489202" className="footer__box">
+          ВК{/* <span className="footer__vkIcon">ВК</span> */}
           </a>
         </div>
       </div>
       <div className="footer__right">
-        <h5 className="footer__name">Эльбараа</h5>
-        <div className="footer__egypt">Я ИЗ <span>ЕГИПТА<GiEgypt/></span></div>
+        {/* <h5 className="footer__name">Эльбараа</h5> */}
+        <div className="footer__egypt">Я ИЗ <span>ЕГИПТА</span><GiEgypt className="footer__egyptianFlag"/></div>
             <div className="footer__egyptIcons">
                 <GiEgyptianBird className="icon"/>
                 <GiEgyptianProfile className="icon"/>

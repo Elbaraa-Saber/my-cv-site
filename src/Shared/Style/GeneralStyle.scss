@@ -1,13 +1,13 @@
 $SystemWhiteColor: #ffffff;
 $SystemWhiteDarkColor: #ffffff0d;
-$SystemBlueColor: #5CBCDF;
-$SystemBlue2Color: #57B4D5;
-$SystemBlue3Color: #4A97B3;
-$SystemBlue4Color: #3C7A91;
-$SystemBlue5Color: #2E5E6F;
-$SystemBlue6Color: #20414D;
+$SystemBlueColor: #5cbcdf;
+$SystemBlue2Color: #57b4d5;
+$SystemBlue3Color: #4a97b3;
+$SystemBlue4Color: #3c7a91;
+$SystemBlue5Color: #2e5e6f;
+$SystemBlue6Color: #20414d;
 
-$SystemYellowColor: rgb(255 230 0 );
+$SystemYellowColor: rgb(255 230 0);
 $SystemYellow2Color: rgb(255 230 0 / 80%);
 
 $SystemDarkColor: #2a2a2a;
@@ -15,173 +15,173 @@ $SystemDark2Color: rgb(42 42 42 / 80%);
 // $SystemBrown2Color: #593E25;
 
 @font-face {
-    font-family: "NanumBrushScript";
-    src: url("./Assest/Font/Nanum_Brush_Script/NanumBrushScript-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "NanumBrushScript";
+  src: url("./Assest/Font/Nanum_Brush_Script/NanumBrushScript-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face{
-    font-family: 'PTSerif';
-    src: url('./Assest/Font/PTSerif/PTSerif-Regular.ttf');
-    font-weight: 400;
-    font-style: normal;
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
 }
-@font-face{
-    font-family: 'PTSerif';
-    src: url('./Assest/Font/PTSerif/PTSerif-Regular.ttf');
-    font-weight: bold;
-    font-style: normal;
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
-@font-face{
-    font-family: 'PTSerif';
-    src: url('./Assest/Font/PTSerif/PTSerif-BoldItalic.ttf');
-    font-weight: bolder;
-    font-style: italic;
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-BoldItalic.ttf");
+  font-weight: bolder;
+  font-style: italic;
 }
-@font-face{
-    font-family: 'Robot';
-    src: url('./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf');
-    font-weight: 400;
-    font-style: normal;
+@font-face {
+  font-family: "Robot";
+  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
 }
-@font-face{
-    font-family: 'Robot';
-    src: url('./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf');
-    font-weight: 500;
-    font-style: normal;
+@font-face {
+  font-family: "Robot";
+  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
 }
-@font-face{
-    font-family: 'Robot';
-    src: url('./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Medium.ttf');
-    font-weight: 600;
-    font-style: normal;
+@font-face {
+  font-family: "Robot";
+  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Medium.ttf");
+  font-weight: 600;
+  font-style: normal;
 }
-@font-face{
-    font-family: 'Robot';
-    src: url('./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-SemiBold.ttf');
-    font-weight: 700;
-    font-style: normal;
+@font-face {
+  font-family: "Robot";
+  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-SemiBold.ttf");
+  font-weight: 700;
+  font-style: normal;
 }
-@font-face{
-    font-family: 'Robot';
-    src: url('./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
+@font-face {
+  font-family: "Robot";
+  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
-@font-face{
-    font-family: 'Robot';
-    src: url('./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-ExtraBold.ttf');
-    font-weight: bolder;
-    font-style: normal;
+@font-face {
+  font-family: "Robot";
+  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-ExtraBold.ttf");
+  font-weight: bolder;
+  font-style: normal;
 }
 
 // headers
 
-@mixin RegularHeaderMediumBold{
-    font-family: 'Robot';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: bold;
+@mixin RegularHeaderMediumBold {
+  font-family: "Robot";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
 }
 
-@mixin RegularHeaderMedium600{
-    font-family: 'Robot';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
+@mixin RegularHeaderMedium600 {
+  font-family: "Robot";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
 }
-@mixin RegularHeaderMediumBold2{
-    font-family: 'Robot';
-    font-size: 35px;
-    font-style: normal;
-    font-weight: bold;
+@mixin RegularHeaderMediumBold2 {
+  font-family: "Robot";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: bold;
 }
-@mixin RegularHeaderBolder{
-    font-family: 'Robot';
-    font-size: 40px;
-    font-style: normal;
-    font-weight: bolder;
+@mixin RegularHeaderBolder {
+  font-family: "Robot";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bolder;
 }
-@mixin RegularHeaderBold{
-    font-family: 'Robot';
-    font-size: 17px;
-    font-style: normal;
-    font-weight: bold;
+@mixin RegularHeaderBold {
+  font-family: "Robot";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: bold;
 }
-@mixin RegularHeaderBold25{
-    font-family: 'Robot';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: bold;
+@mixin RegularHeaderBold25 {
+  font-family: "Robot";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
 }
 
-@mixin RegularHeaderBigBold{
-    font-family: 'Robot';
-    font-size: 50px;
-    font-style: normal;
-    font-weight: bold;
+@mixin RegularHeaderBigBold {
+  font-family: "Robot";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bold;
 }
 
 // regular
 
-@mixin RegularParagraphBold{
-    font-family: 'PTSerif';
-    font-size: 30px;
-    font-style: italic;
-    font-weight: bold;
+@mixin RegularParagraphBold {
+  font-family: "PTSerif";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
 }
-@mixin RegularParagraph2{
-    font-family: 'PTSerif';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
+@mixin RegularParagraph2 {
+  font-family: "PTSerif";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
-@mixin RegularParagraph1{
-    font-family: 'PTSerif';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
+@mixin RegularParagraph1 {
+  font-family: "PTSerif";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
 }
-@mixin RegularMainFont1{
-    font-family: 'Robot';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
+@mixin RegularMainFont1 {
+  font-family: "Robot";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
 }
-@mixin RegularMainFont2{
-    font-family: 'Robot';
-    font-size: 25px;
-    font-style: normal;
-    font-weight: bold;
+@mixin RegularMainFont2 {
+  font-family: "Robot";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
 }
-@mixin RegularMainFont3{
-    font-family: 'Robot';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: bold;
+@mixin RegularMainFont3 {
+  font-family: "Robot";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
 }
 
-// not normal 
+// not normal
 
 @mixin MainScriptBig {
-    font-family: "NanumBrushScript";
-    font-size: 100px;
-    font-weight: 400;
-    line-height: 40.57px;
-    text-align: center;
+  font-family: "NanumBrushScript";
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 40.57px;
+  text-align: center;
 }
 @mixin MainScriptNorm {
-    font-family: "NanumBrushScript";
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40.57px;
-    text-align: center;
+  font-family: "NanumBrushScript";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40.57px;
+  text-align: center;
 }
 @mixin MainScriptSmall {
-    font-family: "NanumBrushScript";
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 40.57px;
-    text-align: center;
+  font-family: "NanumBrushScript";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40.57px;
+  text-align: center;
 }
