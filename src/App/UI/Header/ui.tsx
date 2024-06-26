@@ -34,7 +34,7 @@ export const Header = () => {
         <header ref={ref} className={classNameHeader}>
             <div className="header__left">
                 <div className="header__name">ЭльБараа</div>
-                <p className="header__work">Frontend Developmer</p>
+                <p className="header__work">Frontend Developer</p>
             </div>
             <Img imgSrc={logo} imgAlt='mylog' className="header__img"/>
             <div className="header__right">

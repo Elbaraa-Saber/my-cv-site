@@ -20,17 +20,17 @@ export const Footer = () => {
         <div className="footer__title">Свяжитесь с нами</div>
         <div className="footer__contactBoxes">
           <a href="mailto:baraasaber22@gmail.com" className="footer__box">
-            Общая рабоча почта
+            baraax01@gmail.com
             <MdOutlineEmail />
+          </a>
+          <a href="mailto:elbarsalem@mail.ru" className="footer__box">
+            elbarsalem@mail.ru
+            <MdAlternateEmail />
           </a>
           <span className="footer__box">
             +7 996 692 5268
             <CiMobile1 />
           </span>
-          <a href="mailto:elbarsalem@mail.ru" className="footer__box">
-            Русская почта
-            <MdAlternateEmail />
-          </a>
           <a
             href="https://www.instagram.com/baraasaber1/"
             className="footer__box"

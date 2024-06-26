@@ -70,8 +70,6 @@
 }
 .header__work {
   margin: 0;
-  // font-size: 20px;
-  // font-weight: 500;
   @include MainScriptNorm;
   color: $SystemBlue3Color;
 }
@@ -104,20 +102,10 @@
     .header{
         &.header-hide{
             background-color: transparent;
-            height: 70vh;
+            height: 100%;
             width: 100%;
             .header__right {
-                bottom: 50px;
-                right: 70px;
-                .header__infoBox {
-                    padding: 9px 6px;
-                    .header__info{
-                        @include RegularParagraph2;
-                    }
-                }
-            }
-            .header__left{
-                display: none;
+              display: none;
             }
         }
     }
@@ -127,15 +115,10 @@
         &.header-hide{
             height: 50vh;
             .header__right {
-                bottom: 40px;
-                right: 30px;
-                gap: 8px;
-                .header__infoBox {
-                    padding: 3px 8px;
-                    .header__info{
-                        @include RegularParagraph3;
-                    }
-                }
+              display: none;
+            }
+            .header__left{
+              display: none
             }
         }
         .header__left{
