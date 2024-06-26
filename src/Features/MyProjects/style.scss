@@ -1,0 +1,15 @@
+.myProjects{
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.myProjects__boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 30px;
+    margin: auto;
+    width: 860px;
+}
+.myProjects__box{
+    margin: auto;
+}

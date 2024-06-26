@@ -1,0 +1,17 @@
+@import '../../Style/GeneralStyle.scss';
+
+.skill{
+    background-color: $SystemDarkColor;
+    color: $SystemBlue3Color;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.2);
+        color: $SystemBlueColor;
+        box-shadow: 2px 2px 3px 0px $SystemBlueColor;
+        border: 1px solid $SystemBlueColor;
+    }
+}

@@ -1,0 +1,99 @@
+@import '../../../Shared/Style/GeneralStyle.scss';
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: $SystemBlue6Color;
+    margin-top: 100px;
+}
+.footer__title{
+    text-align: left;
+    font-size: 35px;
+    font-weight: 600;
+    color: $SystemBlueColor;
+    margin: 10px 0;
+}
+.footer__contactBoxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .footer__box {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: $SystemWhiteColor;
+    }
+    a.footer__box{
+        text-decoration: none;
+    }
+    .footer__vkIcon{
+        letter-spacing: -3px;
+    }
+}
+
+.footer__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .footer__name{
+        margin: 0 0 15px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: $SystemBlueColor;
+        // color: $SystemYellowColor;
+    }
+    .footer__egypt{
+        font-size: 20px;
+        font-weight: 600;
+        color: $SystemWhiteColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            font-size: 25px;
+            font-weight: 700;
+            color: $SystemYellowColor;
+        }
+    }
+    .footer__egyptIcons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+        font-size: 35px;
+        font-weight: bold;
+        margin: 15px 0;
+        .icon:nth-child(1),
+        .icon:nth-child(3),
+        .icon:nth-child(5),
+        .icon:nth-child(7)
+        {
+            color: $SystemYellowColor;
+        }
+        .icon:nth-child(2),
+        .icon:nth-child(4),
+        .icon:nth-child(6){
+            color: $SystemBlueColor;
+        }
+    }
+    .footer__russia{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        font-weight: 600;
+        color: $SystemWhiteColor;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../Shared/Style/GeneralStyle.scss';
+
+.changeImg__img{
+    width: 100%;
+    // height: 100vh;
+}
+.changeImg__question{
+    position: absolute;
+    // transform: translate(-50%, -50%);
+    top: 20%;
+    right: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    color: $SystemDarkColor;
+}
+.changeImg{
+    position: relative;
+}

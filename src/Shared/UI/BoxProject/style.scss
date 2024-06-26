@@ -1,0 +1,50 @@
+@import '../../Style/GeneralStyle.scss';
+
+.boxProject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(255, 230, 0, 0.6);
+    border: 2px solid #20414D;
+    transition: 0.5s;
+    padding: 20px;
+    border-radius: 15px;
+    width: 350px;
+    height: 200px;
+    &:hover{
+        transform: translateY(-15px);
+        box-shadow: 7px 9px 10px 3px $SystemBlue5Color;
+    }
+}
+.boxProject__title{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: $SystemBlue6Color;
+}
+.boxProject__creator{
+    font-size: 20px;
+    font-weight: 500;
+    color: $SystemBlue5Color;
+}
+.boxProject__link{
+    text-decoration: none;
+    color: $SystemBlue6Color;
+    font-size: 25px;
+    font-weight: 400;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.1);
+        color: $SystemBlue4Color;
+    }
+    span{
+        font-weight: bold;
+        color: $SystemBlue3Color;
+        transition: 0.3s;
+        &:hover{
+            color: $SystemBlueColor;
+        }
+    }
+}
