@@ -20,8 +20,9 @@
     top: 50%;
     transform: translateY(-50%);
     .aboutMe__name{
-        font-size: 50px;
-        font-weight: bolder;
+        // font-size: 50px;
+        // font-weight: bolder;
+        @include RegularHeaderBigBold;
         margin: 0 0 0px 0;
         color: $SystemBlue6Color;
         text-align: center;
