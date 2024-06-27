@@ -11,14 +11,14 @@ export const MyProjects = () => {
       <div className="myProjects__boxes">
         <BoxProject
           label="eatly"
-          link="https://github.com/Elbaraa-Saber/eatly"
+          link="https://elbaraa-saber.github.io/eatly/"
           withTeam={false}
           explain="Сайт для заказать еду."
           className="myProjects__box"
         />
         <BoxProject
           label="Парсер форм"
-          link="https://github.com/Elbaraa-Saber/daynamicForm"
+          link="https://elbaraa-saber.github.io/daynamicForm"
           withTeam={false}
           explain="Динамический парсер форм (React TS)"
           className="myProjects__box"
