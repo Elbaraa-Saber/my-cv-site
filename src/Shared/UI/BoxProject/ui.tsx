@@ -37,7 +37,7 @@ export const BoxProject = ({
             Нажмите, чтобы увидеть <span>{label ? label : "Сайт"}</span>
           </NavLink>
         ) : (
-          <NavLink className={"boxProject__link"} to={linkCode}>
+          <NavLink className={"boxProject__link"} to={linkCode} onClick={() => window.location.reload()}>
             Нажмите, чтобы увидеть код на Github
           </NavLink>
         )}
