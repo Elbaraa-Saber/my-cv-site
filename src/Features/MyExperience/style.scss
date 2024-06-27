@@ -40,6 +40,7 @@
     text-align: left;
     color: $SystemBlue6Color;
     @include RegularParagraph3;
+    margin-right: 20px;
 }
 
 @media (max-width: $LaptopWidth){

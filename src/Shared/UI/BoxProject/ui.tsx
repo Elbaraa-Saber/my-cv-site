@@ -50,5 +50,3 @@ export const BoxProject = ({
     </div>
   );
 };
-
-// onClick={() => window.location.reload()}

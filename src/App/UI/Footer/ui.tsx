@@ -31,13 +31,13 @@ export const Footer = () => {
             +7 996 692 5268
             <CiMobile1 />
           </span>
-          <a
+          {/* <a
             href="https://www.instagram.com/baraasaber1/"
             className="footer__box"
           >
             Инстграм
             <FaInstagram/>
-          </a>
+          </a> */}
           <a href="https://vk.com/id615489202" className="footer__box">
           ВК{/* <span className="footer__vkIcon">ВК</span> */}
           </a>
