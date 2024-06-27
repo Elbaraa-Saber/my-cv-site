@@ -58,10 +58,10 @@
 .header__img {
   width: 85px;
   border-radius: 50%;
-  border: 4px solid $SystemWhiteColor;
+  border: 4px solid $SystemBlue3Color ;
   transition: 0.5s;
   &:hover {
-    border-color: $SystemWhiteDarkColor;
+    border-color: $SystemBlueColor;
   }
 }
 .header__name {
