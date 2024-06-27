@@ -27,7 +27,11 @@
         display: flex;
         align-items: center;
         gap: 15px;
-        color: $SystemBlueColor;
+        color: $SystemBlue6Color;
+        padding: 5px 8px;
+        background-color: $SystemBlue1Color;
+        border-radius: 10px;
+        margin: 5px;
         &:hover{
             color: $SystemDarkColor;
         }

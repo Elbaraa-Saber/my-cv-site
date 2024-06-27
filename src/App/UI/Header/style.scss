@@ -39,19 +39,19 @@
     }
     .header__right {
       display: none;
-      flex-direction: row;
-      justify-content: right;
-      align-items: flex-end;
-      gap: 20px;
-      position: absolute;
-      top: 50px;
-      right: 50px;
-      .header__infoBox {
-        padding: 12px 8px;
-        .header__info{
-          color: $SystemWhiteColor;
-        }
-      }
+      // flex-direction: row;
+      // justify-content: right;
+      // align-items: flex-end;
+      // gap: 20px;
+      // position: absolute;
+      // top: 50px;
+      // right: 50px;
+      // .header__infoBox {
+      //   padding: 12px 8px;
+      //   .header__info{
+      //     color: $SystemWhiteColor;
+      //   }
+      // }
     }
   }
 }

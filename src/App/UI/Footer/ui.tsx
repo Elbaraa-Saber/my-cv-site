@@ -12,6 +12,7 @@ import { GiEgyptianSphinx } from "react-icons/gi";
 import { GiEgyptianTemple } from "react-icons/gi";
 import { GiEgyptianUrns } from "react-icons/gi";
 import { GiEgyptianWalk } from "react-icons/gi";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -38,23 +39,26 @@ export const Footer = () => {
             Инстграм
             <FaInstagram/>
           </a> */}
+          <a href="https://t.me/baraasalem2" className="footer__box">
+            Telegram <FaTelegramPlane />{/* <span className="footer__vkIcon">ВК</span> */}
+          </a>
           <a href="https://vk.com/id615489202" className="footer__box">
-          ВК{/* <span className="footer__vkIcon">ВК</span> */}
+            ВК{/* <span className="footer__vkIcon">ВК</span> */}
           </a>
         </div>
       </div>
       <div className="footer__right">
         {/* <h5 className="footer__name">Эльбараа</h5> */}
-        <div className="footer__egypt">Я ИЗ <span>ЕГИПТА</span><GiEgypt className="footer__egyptianFlag"/></div>
-            <div className="footer__egyptIcons">
-                <GiEgyptianBird className="icon"/>
-                <GiEgyptianProfile className="icon"/>
-                <GiEgyptianPyramids className="icon" />
-                <GiEgyptianSphinx className="icon"/>
-                <GiEgyptianTemple className="icon"/>
-                <GiEgyptianUrns className="icon"/>
-                <GiEgyptianWalk className="icon"/>
-            </div>
+        {/* <div className="footer__egypt">Я ИЗ <span>ЕГИПТА</span><GiEgypt className="footer__egyptianFlag"/></div> */}
+        <div className="footer__egyptIcons">
+          <GiEgyptianBird className="icon" />
+          <GiEgyptianProfile className="icon" />
+          <GiEgyptianPyramids className="icon" />
+          <GiEgyptianSphinx className="icon" />
+          <GiEgyptianTemple className="icon" />
+          <GiEgyptianUrns className="icon" />
+          <GiEgyptianWalk className="icon" />
+        </div>
       </div>
     </footer>
   );
