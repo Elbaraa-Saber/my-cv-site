@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-cv-site/static/css/main.7f17af5e.css",
-    "main.js": "/my-cv-site/static/js/main.be18bc2e.js",
+    "main.css": "/my-cv-site/static/css/main.802de723.css",
+    "main.js": "/my-cv-site/static/js/main.9f213f70.js",
     "static/media/NanumBrushScript-Regular.ttf": "/my-cv-site/static/media/NanumBrushScript-Regular.889e08baf23739dad1f3.ttf",
     "static/media/firstTrip2.JPG": "/my-cv-site/static/media/firstTrip2.b3dc6059ceee9cd1e871.JPG",
     "static/media/PTSerif-Italic.ttf": "/my-cv-site/static/media/PTSerif-Italic.d90ee47f324014fc2bae.ttf",
@@ -16,11 +16,11 @@
     "static/media/intenarship.jpg": "/my-cv-site/static/media/intenarship.d07bd1cb99a6160d10e9.jpg",
     "static/media/logo.jpg": "/my-cv-site/static/media/logo.d00b2e1d3e1af6de9ae7.jpg",
     "index.html": "/my-cv-site/index.html",
-    "main.7f17af5e.css.map": "/my-cv-site/static/css/main.7f17af5e.css.map",
-    "main.be18bc2e.js.map": "/my-cv-site/static/js/main.be18bc2e.js.map"
+    "main.802de723.css.map": "/my-cv-site/static/css/main.802de723.css.map",
+    "main.9f213f70.js.map": "/my-cv-site/static/js/main.9f213f70.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f17af5e.css",
-    "static/js/main.be18bc2e.js"
+    "static/css/main.802de723.css",
+    "static/js/main.9f213f70.js"
   ]
 }
