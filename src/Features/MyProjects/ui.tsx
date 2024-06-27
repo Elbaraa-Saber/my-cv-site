@@ -10,31 +10,33 @@ export const MyProjects = () => {
       <Title title="Мои Проекты" className="myProjects__title"/>
       <div className="myProjects__boxes">
         <BoxProject
-          label="eatly"
+          label="Eatly"
           link="https://elbaraa-saber.github.io/eatly/"
           withTeam={false}
-          explain="Сайт для заказать еду."
+          explain="Сайт для заказа еды (React JS)."
           className="myProjects__box"
+          linkCode="https://github.com/Elbaraa-Saber/eatly"
         />
         <BoxProject
           label="Парсер форм"
           link="https://elbaraa-saber.github.io/daynamicForm"
           withTeam={false}
-          explain="Динамический парсер форм (React TS)"
+          explain="Динамический парсер форм (React TS)."
           className="myProjects__box"
+          linkCode="https://github.com/Elbaraa-Saber/daynamicForm"
         />
         <BoxProject
           label="Канбан доска"
-          link="https://github.com/DaryaVin/AA_HW3"
+          linkCode="https://github.com/DaryaVin/AA_HW3"
           withTeam={true}
-          explain="Канбан доска."
+          explain="Канбан доска  (React TS)."
           className="myProjects__box"
         />
         <BoxProject
           label="Сервис Онлайн образования"
-          link="https://github.com/pmaxaa/education-service"
+          linkCode="https://github.com/pmaxaa/education-service"
           withTeam={true}
-          explain="Сервис Онлайн образования."
+          explain="Сервис Онлайн образования  (React TS)."
           className="myProjects__box"
         />
       </div>

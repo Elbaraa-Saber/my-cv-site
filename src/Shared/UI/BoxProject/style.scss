@@ -27,7 +27,7 @@
     color: $SystemDarkColor;
 }
 .boxProject__creator{
-    @include RegularParagraph3;
+    @include RegularParagraph2;
     color: $SystemDarkColor;
 }
 .boxProject__link{
@@ -35,16 +35,15 @@
     color: $SystemWhiteColor;
     @include RegularParagraph2;
     transition: 0.3s;
+    display: block;
     &:hover{
         transform: scale(1.1);
     }
-    // span{
-    //     // @include RegularHeaderMedium600;
-    //     transition: 0.3s;
-    //     &:hover{
-    //         color: $SystemBlue3Color;
-    //     }
-    // }
+}
+.boxProject__linkCode {
+    text-decoration: none;
+    color: $SystemBlue6Color;
+    @include MainScriptOverSmall;
 }
 
 @media (max-width: $BigMobile){

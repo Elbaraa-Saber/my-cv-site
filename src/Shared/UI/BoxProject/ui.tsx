@@ -1,23 +1,49 @@
 import React from "react";
-import './style.scss';
+import "./style.scss";
 import { NavLink } from "react-router-dom";
 
 interface Props {
-    explain: string,
-    label: string,
-    link: string,
-    withTeam: boolean,
-    className?: string
+  explain: string;
+  label: string;
+  link?: string;
+  withTeam: boolean;
+  className?: string;
+  linkCode: string;
 }
 
-export const BoxProject = ({label, link, withTeam, explain, className}: Props) => {
-    return(
-        <div className={`boxProject ${className}`}>
-            <div className="    ">
-                <h3 className="boxProject__title">{explain}</h3>
-                <div className="boxProject__creator">{withTeam ? "Сделано командой" : 'Сделано мной'} на стажировке</div>
-            </div>
-            <NavLink className='boxProject__link' to={link}>Go to <span>{label}</span></NavLink>
+export const BoxProject = ({
+  label,
+  link,
+  withTeam,
+  explain,
+  className,
+  linkCode,
+}: Props) => {
+  return (
+    <div className={`boxProject ${className}`}>
+      <div className="">
+        <h3 className="boxProject__title">{explain}</h3>
+        <div className="boxProject__creator">
+          {withTeam ? "Сделано командой" : "Сделано мной"} на стажировке
         </div>
-    )
-}
+      </div>
+      <div className="">
+        {   link ?
+            <NavLink className="boxProject__link" to={link}>
+            Нажмите, чтобы увидеть <span>{label}</span>
+            </NavLink> :
+            <NavLink className={"boxProject__link"} to={linkCode}>
+                Нажмите, чтобы увидеть код на Github
+            </NavLink>
+            
+        }
+        {   link &&
+            linkCode && (
+          <NavLink className={"boxProject__linkCode"} to={linkCode}>
+            Click to see code on Github
+          </NavLink>
+        )}
+      </div>
+    </div>
+  );
+};
