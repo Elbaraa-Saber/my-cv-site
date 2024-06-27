@@ -3,9 +3,6 @@
 .experience{
     margin-top: 80px;
     height: fit-content;
-    .experience__container{
-        // margin-right: 0;
-    }
 }
 .experience__content{
     height: fit-content;
@@ -26,12 +23,10 @@
 }
 .experience__companyName{
     @include RegularHeaderMediumBold2;
-    // margin-right: $PaddingContainer;
     margin-bottom: 20px;
     color: $SystemWhiteColor;
 }
 .experience__team{
-    // margin-right: $PaddingContainer;
     margin-top: 20px;
     @include RegularParagraphBold;
     color: $SystemBlue1Color;

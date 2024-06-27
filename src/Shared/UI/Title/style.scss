@@ -3,7 +3,6 @@
 .title{
     @include RegularMainFont3;
     padding: 10px 30px ;
-    // border: 3px solid $SystemDarkColor;
     width: fit-content;
     box-shadow: 2px 2px 4px 0px $SystemDarkColor;
     margin: 0px auto 100px auto;
@@ -13,9 +12,6 @@
     position: relative;
     transition: 0.7s;
     border: 1px solid $SystemBlue2Color;
-    &:hover{
-        // background-color: $SystemBlue1Color;
-    }
 }
 
 @media (max-width: $Mobile){

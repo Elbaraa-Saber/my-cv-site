@@ -3,7 +3,6 @@
 .footer{
     margin-top: 100px;
     padding: 1px 0px 40px 0px;
-    // background-color: #20414d;
     background-color: $SystemBlue6Color;
     .footer__container{
         display: flex;
@@ -11,8 +10,6 @@
         align-items: center;
         background-color: $SystemBlue6Color;
         margin-top: 100px;
-        // padding-top: 50px;
-        // padding-bottom: 30px
     }
 }
 .footer__title{
