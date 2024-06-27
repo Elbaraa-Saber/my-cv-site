@@ -47,8 +47,6 @@
     }
     .aboutMe__techSkills{
         display: flex;
-        // flex-direction: row;
-        // gap: 10px;
         align-items: center;
         justify-content: center;
     }
@@ -64,7 +62,6 @@
         padding: 10px 7px;
     }
 }
-// @media (max-widt)
 @media (min-width: $LaptopWidth) {
     .aboutMe__techSkills{
         gap: 5px;
@@ -101,9 +98,3 @@
         gap: 10px;
     }
 }
-// @media (max-width: $IpadWidth){
-//     .aboutMe__techSkills{
-//         flex-direction: column;
-//         gap: 10px;
-//     }
-// }

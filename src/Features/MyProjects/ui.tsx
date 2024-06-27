@@ -1,12 +1,10 @@
 import React from "react";
 import "./style.scss";
 import { Title, BoxProject } from "../../Shared/index.ts";
-// import { BoxProject } from "../../Shared";
 
 export const MyProjects = () => {
   return (
     <section className="myProjects">
-      {/* <h3 className="myProjects__title">Мои Проекты</h3> */}
       <Title title="Мои Проекты" className="myProjects__title"/>
       <div className="myProjects__boxes">
         <BoxProject

@@ -6,13 +6,9 @@
     align-items: center;
     padding: 50px;
     background-color: $SystemBlue6Color;
-    // background-color: #20414d;
     margin-top: 100px;
 }
 .footer__title{
-    // text-align: left;
-    // font-size: 35px;
-    // font-weight: 600;
     @include RegularHeaderMediumBold2;  
     color: $SystemWhiteColor;
     margin: 10px 0;
@@ -52,18 +48,15 @@
         font-weight: bold;
         text-align: center;
         color: $SystemWhiteColor;
-        // color: $SystemYellowColor;
     }
     .footer__egypt{
-        // font-size: 20px;
-        // font-weight: 600;
         @include RegularParagraph3;
         color: $SystemBlue1Color;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
-        // color: red;
+        letter-spacing: 3px;
         span{
             color: $SystemBlue1Color;
         }
@@ -86,23 +79,7 @@
                 color: $SystemBlue2Color;
             }
         }
-        // .icon:nth-child(3){
-        //     color: $SystemYellow2Color;
-        //     &:hover{
-        //         color: $SystemBlueColor;
-        //     }
-        // }
     }
-    // .footer__russia{
-    //     @include RegularMainFont2;
-    //     // font-size: 20px;
-    //     // font-weight: 600;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: space-between;
-    //     gap: 10px;
-    //     color: $SystemWhiteColor;
-    // }
 }
 
 @media(max-width: $BigMobile){

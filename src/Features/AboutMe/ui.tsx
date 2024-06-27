@@ -12,7 +12,7 @@ export const AboutMe = () => {
         <p className="aboutMe__work">Front end developer</p>
         <p className="aboutMe__intro">
           Я студент из Египта, проживающий с 2021 года в России. Осваиваю
-          русский язык,  получаю стипендию и обучаюсь по специальности:
+          русский язык, обучаюсь по специальности:
           "Программная инженерия" в НИ ТГУ.
         </p>
         <p className="aboutMe__langueges">
