@@ -16,23 +16,27 @@ export const MyProjects = () => {
           explain="Сайт для заказа еды (React JS)."
           className="myProjects__box"
           linkCode="https://github.com/Elbaraa-Saber/eatly"
-        />
+          intenarship={true}
+          />
         <BoxProject
+          intenarship={true}
           label="Парсер форм"
           link="https://elbaraa-saber.github.io/daynamicForm"
           withTeam={false}
           explain="Динамический парсер форм (React TS)."
           className="myProjects__box"
           linkCode="https://github.com/Elbaraa-Saber/daynamicForm"
-        />
+          />
         <BoxProject
+          intenarship={true}
           label="Канбан доска"
           linkCode="https://github.com/DaryaVin/AA_HW3"
           withTeam={true}
           explain="Канбан доска  (React TS)."
           className="myProjects__box"
-        />
+          />
         <BoxProject
+          intenarship={true}
           label="Сервис Онлайн образования"
           linkCode="https://github.com/pmaxaa/education-service"
           withTeam={true}

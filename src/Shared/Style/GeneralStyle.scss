@@ -199,6 +199,12 @@ $Mobile: 400px;
   font-style: normal;
   font-weight: bolder;
 }
+@mixin RegularHeader40500 {
+  font-family: "Robot";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+}
 @mixin RegularHeaderBigBold {
   font-family: "Robot";
   font-size: 50px;

@@ -1,0 +1,21 @@
+@import '../../Shared/Style/GeneralStyle.scss';
+
+.oldProjects__title{
+    @include RegularHeader40500;
+    color: $SystemDarkColor;
+    width: 90%;
+    margin: 40px auto;
+}
+.oldProjects__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+    .oldProjects__box{
+        width: 250px;
+        height: fit-content;
+        background-color: $SystemBlue3Color;
+        margin: auto;
+    }
+}
