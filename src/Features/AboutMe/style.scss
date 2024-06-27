@@ -2,15 +2,18 @@
 
 .aboutMe{
     height: 100vh;
-    position: relative;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding: 50px 0;
+    height: 100%;
+    .aboutMe__container{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
 }
 .aboutMe__img{
-    height: 300px;
+    height: 400px;
     border-radius: 100px 0 100px 0;
     box-shadow: 3px 3px 3px 3px $SystemBlue4Color;
 }
@@ -48,18 +51,18 @@
     .aboutMe__techSkills{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
     .aboutMe__mySkills{
         @include RegularHeaderMediumBold;
         color: $SystemDarkColor;
-        border: 2px solid $SystemBlue6Color;
-        background-color: $SystemBlue1Color;
-        border-radius: 15px;
+        box-shadow: 2px 2px 4px 0px $SystemBlue6Color;
+        background-color: $SystemBlueColor;
+        border-radius: 20px;
         width: fit-content;
         text-align: center;
         margin: 50px auto 20px;
-        padding: 10px 7px;
+        padding: 10px 30px;
     }
 }
 @media (min-width: $LaptopWidth) {
@@ -70,9 +73,9 @@
 }
 @media(max-width: $LaptopWidth){
     .aboutMe{
-        flex-direction: column-reverse;
-        height: fit-content;
-        gap: 40px;
+        .aboutMe__container{
+            justify-content: center;
+        }
         .aboutMe__txt{
             width: 80%;
             text-align: center;

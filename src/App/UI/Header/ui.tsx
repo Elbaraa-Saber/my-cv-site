@@ -31,12 +31,16 @@ export const Header = () => {
     );
 
     return (
+        
         <header ref={ref} className={classNameHeader}>
+            <div className="container header__container">
             <div className="header__left">
-                <div className="header__name">ЭльБараа</div>
-                <p className="header__work">Frontend Developer</p>
+                <div className="header__leftTxt">
+                    <div className="header__name">ЭльБараа</div>
+                    <p className="header__work">Frontend Developer</p>
+                </div>
+                <Img imgSrc={logo} imgAlt='mylog' className="header__img"/>
             </div>
-            <Img imgSrc={logo} imgAlt='mylog' className="header__img"/>
             <div className="header__right">
                 <div className="header__infoBox">
                     <span className="header__info">Россия, Томск</span>
@@ -48,6 +52,7 @@ export const Header = () => {
                     <a href="mailto:baraax01@gmail.com" className="header__info">baraax01@gmail.com</a>
                 </div>
             </div>
+        </div>
         </header>
     )
 }

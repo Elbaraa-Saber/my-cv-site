@@ -3,12 +3,16 @@
 .experience{
     margin-top: 80px;
     height: fit-content;
+    .experience__container{
+        // margin-right: 0;
+    }
 }
 .experience__content{
     height: fit-content;
     text-align: left;
     width: 100%;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
@@ -16,47 +20,44 @@
 .experience__company{
     background-color: $SystemDarkColor;
     width: 600px;
-    border-radius: 0 100px 100px 0;
-    padding: 30px 15px 30px 0;
+    border-radius: 100px;
+    padding: 40px 30px;
+    text-align: center;
 }
 .experience__companyName{
     @include RegularHeaderMediumBold2;
-    margin-left: 80px;
+    // margin-right: $PaddingContainer;
     margin-bottom: 20px;
     color: $SystemWhiteColor;
 }
 .experience__team{
-    margin: 20px 0 0 80px;
+    // margin-right: $PaddingContainer;
+    margin-top: 20px;
     @include RegularParagraphBold;
-    width: fit-content;
     color: $SystemBlue1Color;
 }
 .experience__img{
     width: 500px;
-    border-radius: 0 50px 50px 0;
+    border-radius: 50px 50px 50px 50px;
 }
 .experience__txt{
-    width: 45%;
+    width: 40%;
     text-align: left;
     color: $SystemBlue6Color;
     @include RegularParagraph3;
     margin-right: 20px;
 }
-@media (min-width: 1400px){
-    .experience__txt{
-        margin-right: 80px;
-        text-align: center;
-    }
-}
-@media (max-width: $LaptopWidth){
+
+@media (max-width: $TvWidth){
     .experience__content{
         flex-direction: column;
     }
+}
+@media (max-width: $LaptopWidth){
     .experience__company{
         border-radius: 100px;
         padding: 30px 15px 30px 15px;
         text-align: center;
-        margin: auto;
         .experience__companyName{
             margin: 0 auto 10px;
         }
@@ -74,17 +75,27 @@
 }
 @media (max-width: $IpadWidth){
     .experience__company{
-        width: 500px;
+        width: 400px;
+        border-radius: 70px;
     }
     .experience__img {
-        width: 400px;
+        width: 300px;
         border-radius: 50px;
+        @include RegularParagraph2;
+        border-radius: 40px
+    }
+    .experience__companyName{
+        @include RegularMainFont2;
+    }
+    .experience__team{
+        @include RegularParagraph3;
     }
 }
 @media (max-width: $BigMobile){
     .experience__company{
         width: 340px;
         border-radius: 30px;
+        padding: 20px;
     }
     .experience__img {
         width: 300px;

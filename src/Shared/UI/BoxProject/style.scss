@@ -7,24 +7,24 @@
     flex-direction: column;
     gap: 15px;
     background-color: $SystemBlue2Color;
-    border: 2px solid $SystemBlue6Color;
+    // box-shadow: 2px 3px 3px 2px #2e5e6f;
     transition: 0.5s;
     padding: 20px;
     border-radius: 15px;
     width: 350px;
     min-height: 200px;
-    box-shadow: 1px 1px 4px 2px $SystemBlue5Color;
+    box-shadow: 4px 4px 5px 0px $SystemBlue5Color;
     height: fit-content;
     &:hover{
         transform: translateY(-15px);
-        box-shadow: 7px 9px 10px 3px $SystemBlue5Color;
+        box-shadow: 6px 8px 10px 0px $SystemBlue5Color;
         background-color: $SystemBlueColor;
     }
 }
 .boxProject__title{
     margin: 0 auto 10px;
     @include RegularHeaderBold25400;
-    color: $SystemDarkColor;
+    color: $SystemWhiteColor;
 }
 .boxProject__creator{
     @include RegularParagraph2;
@@ -32,7 +32,7 @@
 }
 .boxProject__link{
     text-decoration: none;
-    color: $SystemWhiteColor;
+    color: $SystemBlue6Color;
     @include RegularParagraph2;
     transition: 0.3s;
     display: block;

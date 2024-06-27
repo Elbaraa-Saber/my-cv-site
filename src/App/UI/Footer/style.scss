@@ -1,12 +1,19 @@
 @import '../../../Shared/Style/GeneralStyle.scss';
 
 .footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-color: $SystemBlue6Color;
     margin-top: 100px;
+    padding: 1px 0px 40px 0px;
+    // background-color: #20414d;
+    background-color: $SystemBlue6Color;
+    .footer__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $SystemBlue6Color;
+        margin-top: 100px;
+        // padding-top: 50px;
+        // padding-bottom: 30px
+    }
 }
 .footer__title{
     @include RegularHeaderMediumBold2;  
@@ -16,7 +23,7 @@
 .footer__contactBoxes{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     flex-direction: column;
     .footer__box {
         @include RegularParagraph2;
@@ -38,32 +45,7 @@
 }
 
 .footer__right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    .footer__name{
-        margin: 0 0 15px;
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        color: $SystemWhiteColor;
-    }
-    .footer__egypt{
-        @include RegularParagraph3;
-        color: $SystemBlue1Color;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        letter-spacing: 3px;
-        span{
-            color: $SystemBlue1Color;
-        }
-        .footer__egyptianFlag{
-            color: $SystemBlue1Color;
-        }
-    }
+    margin-top: auto;
     .footer__egyptIcons{
         display: flex;
         justify-content: space-between;
@@ -91,7 +73,12 @@
 }
 @media(max-width: $IpadWidth){
     .footer{
-        flex-direction: column;
-        gap: 50px;
+        .footer__container{
+            flex-direction: column;
+            gap: 50px;
+        }
+        .footer__contactBoxes{
+            align-items: center;
+        }
     }
 }

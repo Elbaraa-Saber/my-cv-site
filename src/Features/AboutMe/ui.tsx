@@ -6,6 +6,8 @@ import { Img, Skill } from "../../Shared/index.ts";
 export const AboutMe = () => {
   return (
     <section className="aboutMe">
+      <div className="container aboutMe__container">
+
       <Img className="aboutMe__img" imgSrc={ImgMain} imgAlt="main" />
       <div className="aboutMe__txt">
         <h1 className="aboutMe__name">Салем ЭльБараа</h1>
@@ -33,6 +35,7 @@ export const AboutMe = () => {
           <Skill skill="API" />
           <Skill skill="CSS" />
         </p>
+      </div>
       </div>
     </section>
   );
