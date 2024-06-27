@@ -2,7 +2,7 @@
 
 .title{
     @include RegularMainFont3;
-    padding: 10px 30px ;
+    padding: 10px 50px ;
     width: fit-content;
     box-shadow: 2px 2px 4px 0px $SystemDarkColor;
     margin: 0px auto 100px auto;
@@ -12,11 +12,52 @@
     position: relative;
     transition: 0.7s;
     border: 1px solid $SystemBlue2Color;
+    &::after{
+        position: absolute;
+        content: '';
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: $SystemBlueColor;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -50px;
+        // border: 2px solid;
+        transition: 0.5s;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: $SystemBlueColor;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -50px;
+        // border: 2px solid;
+        transition: 0.5s;
+    }
+    // border: 1px solid $SystemBlue2Color;
+    &:hover{
+        background-color: $SystemBlue1Color;
+        &::after{
+            left: 0;
+            border: none;
+            background-color: $SystemBlue1Color;
+        }
+        &::before{
+            right: 0;
+            border: none;
+            background-color: $SystemBlue1Color;
+        }
+        // background-color: $SystemBlue1Color;
+    }
 }
 
 @media (max-width: $Mobile){
     .title{
-        padding: 10px 15px;
+        // padding: 10px 15px;
         &::after{
             left: -35px;
         }

@@ -1,10 +1,16 @@
 @import '../../Style/GeneralStyle.scss';
 
 .skill{
-    background-color: $SystemDarkColor;
+    background-color: $SystemBlue6Color;
     color: $SystemWhiteColor;
     padding: 7px 10px;
     border-radius: 10px;
     @include RegularParagraph2;
     transition: 0.5s;
+    &:hover {
+        transform: scale(1.2);
+        background-color: $SystemWhiteColor;
+        color: $SystemBlue6Color;
+        box-shadow: 2px 2px 5px 0px $SystemBlue5Color;
+    }
 }

@@ -1,103 +1,188 @@
-@import '../../Shared/Style/GeneralStyle.scss';
+@import "../../Shared/Style/GeneralStyle.scss";
 
-.aboutMe{
-    height: 100vh;
-    padding: 50px 0;
-    height: 100%;
-    .aboutMe__container{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
+.aboutMe {
+  height: 100vh;
+  padding: 50px 0;
+  height: 100%;
+  .aboutMe__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
 }
-.aboutMe__img{
-    height: 400px;
-    border-radius: 100px 0 100px 0;
-    box-shadow: 3px 3px 3px 3px $SystemBlue4Color;
+.aboutMe__img {
+  height: 400px;
+  border-radius: 100px 0 100px 0;
+  box-shadow: 3px 3px 3px 3px $SystemBlue4Color;
 }
-.aboutMe__txt{
-    width: 60%;
-    .aboutMe__name{
-        @include RegularHeaderBigBold;
-        margin: 0 0 0px 0;
-        color: $SystemDarkColor;
-        text-align: center;
+.aboutMe__txt {
+  width: 60%;
+  .aboutMe__name {
+    @include RegularHeaderBigBold;
+    margin: 0 0 0px 0;
+    color: $SystemDarkColor;
+    text-align: center;
+  }
+  .aboutMe__headText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+      .aboutMe__work {
+        &::after {
+          width: 50%;
+          left: 0;
+        }
+        &::before {
+          width: 50%;
+          right: 0;
+        }
+      }
     }
-    .aboutMe__work{
-        @include RegularMainFont2;
-        margin: 0px 0 10px 0;
-        color: $SystemBlue3Color;
+  }
+  .aboutMe__work {
+    @include RegularMainFont2;
+    width: fit-content;
+    margin: 0px 0 10px 0;
+    color: $SystemBlue3Color;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -70px;
+      // bottom: 0;
+      bottom: -10px;
+      width: 0px;
+      height: 3px;
+      background-color: $SystemBlue5Color;
+      transition: 0.7s;
     }
-    .aboutMe__intro{
-        @include RegularParagraph3;
-        color: $SystemBlue6Color;
-        text-align: left;
-        margin-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      right: -70px;
+      bottom: -10px;
+      width: 0px;
+      height: 3px;
+      background-color: $SystemBlue5Color;
+      transition: 0.7s;
     }
-    .aboutMe__langueges{
-        @include RegularParagraph3;
-        color: $SystemBlue6Color;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-    .aboutMe__softSkills{
-        @include RegularParagraph3;
-        color: $SystemBlue6Color;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-    .aboutMe__techSkills{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .aboutMe__mySkills{
-        @include RegularHeaderMediumBold;
-        color: $SystemDarkColor;
-        box-shadow: 2px 2px 4px 0px $SystemBlue6Color;
-        background-color: $SystemBlueColor;
-        border-radius: 20px;
-        width: fit-content;
-        text-align: center;
-        margin: 50px auto 20px;
-        padding: 10px 30px;
-    }
+  }
+  .aboutMe__intro {
+    @include RegularParagraph3;
+    color: $SystemBlue6Color;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .aboutMe__langueges {
+    @include RegularParagraph3;
+    color: $SystemBlue6Color;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .aboutMe__softSkills {
+    @include RegularParagraph3;
+    color: $SystemBlue6Color;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .aboutMe__techSkills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .aboutMe__mySkills {
+    @include RegularHeaderMediumBold;
+    color: $SystemDarkColor;
+    box-shadow: 2px 2px 4px 0px $SystemBlue6Color;
+    background-color: $SystemBlueColor;
+    border-radius: 20px;
+    width: fit-content;
+    text-align: center;
+    margin: 50px auto 20px;
+    padding: 10px 50px;
+  }
 }
 @media (min-width: $LaptopWidth) {
-    .aboutMe__techSkills{
-        gap: 5px;
-        flex-direction: row;
-    }
+  .aboutMe__techSkills {
+    gap: 5px;
+    flex-direction: row;
+  }
 }
-@media(max-width: $LaptopWidth){
-    .aboutMe{
-        .aboutMe__container{
-            justify-content: center;
-        }
-        .aboutMe__txt{
-            width: 80%;
-            text-align: center;
-            .aboutMe__intro{
-                text-align: center;
-            }
-            .aboutMe__langueges{
-                text-align: center;
-            }
-            .aboutMe__softSkills{
-                text-align: center;
-            }
-        }
-        .aboutMe__mySkills{
-            margin: 20px auto;
-        }
-        .aboutMe__img{
-            display: none;
-        }
+@media (max-width: $LaptopWidth) {
+  .aboutMe {
+    .aboutMe__container {
+      justify-content: center;
     }
-    .aboutMe__techSkills{
-        flex-direction: column;
-        gap: 10px;
+    .aboutMe__txt {
+      width: 80%;
+      text-align: center;
+      .aboutMe__intro {
+        text-align: center;
+      }
+      .aboutMe__langueges {
+        text-align: center;
+      }
+      .aboutMe__softSkills {
+        text-align: center;
+      }
+      .aboutMe__mySkills {
+        position: relative;
+      }
     }
+    .aboutMe__mySkills {
+      margin: 20px auto;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: $SystemBlueColor;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -50px;
+        // border: 2px solid;
+        transition: 0.5s;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: $SystemBlueColor;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -50px;
+        // border: 2px solid;
+        transition: 0.5s;
+      }
+      // border: 1px solid $SystemBlue2Color;
+      &:hover {
+        background-color: $SystemBlue1Color;
+        &::after {
+          left: 0;
+          border: none;
+          background-color: $SystemBlue1Color;
+        }
+        &::before {
+          right: 0;
+          border: none;
+          background-color: $SystemBlue1Color;
+        }
+        // background-color: $SystemBlue1Color;
+      }
+    }
+    .aboutMe__img {
+      display: none;
+    }
+  }
+  .aboutMe__techSkills {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

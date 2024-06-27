@@ -10,8 +10,11 @@ export const AboutMe = () => {
 
       <Img className="aboutMe__img" imgSrc={ImgMain} imgAlt="main" />
       <div className="aboutMe__txt">
+        <div className="aboutMe__headText">
         <h1 className="aboutMe__name">Салем ЭльБараа</h1>
         <p className="aboutMe__work">Front end developer</p>
+
+        </div>
         <p className="aboutMe__intro">
           Я студент из Египта, проживающий с 2021 года в России. Осваиваю
           русский язык, обучаюсь по специальности:
