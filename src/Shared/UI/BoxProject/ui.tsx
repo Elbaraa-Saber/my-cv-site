@@ -33,20 +33,22 @@ export const BoxProject = ({
       </div>
       <div className="">
         {link ? (
-          <NavLink className="boxProject__link" to={link} onClick={() => window.location.reload()}>
+          <a className="boxProject__link" href={link}>
             Нажмите, чтобы увидеть <span>{label ? label : "Сайт"}</span>
-          </NavLink>
+          </a>
         ) : (
-          <NavLink className={"boxProject__link"} to={linkCode} onClick={() => window.location.reload()}>
+          <a className={"boxProject__link"} href={linkCode} >
             Нажмите, чтобы увидеть код на Github
-          </NavLink>
+          </a>
         )}
         {link && linkCode && (
-          <NavLink className={"boxProject__linkCode"} to={linkCode} onClick={() => window.location.reload()}>
+          <a className={"boxProject__linkCode"} href={linkCode}>
             Click to see code on Github
-          </NavLink>
+          </a>
         )}
       </div>
     </div>
   );
 };
+
+// onClick={() => window.location.reload()}
