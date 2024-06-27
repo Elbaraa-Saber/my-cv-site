@@ -32,16 +32,12 @@ export const BoxProject = ({
         </div>
       </div>
       <div className="">
-        {link ? (
+        {link &&
           <a className="boxProject__link" href={link}>
             Нажмите, чтобы увидеть <span>{label ? label : "Сайт"}</span>
           </a>
-        ) : (
-          <a className={"boxProject__link"} href={linkCode} >
-            Нажмите, чтобы увидеть код на Github
-          </a>
-        )}
-        {link && linkCode && (
+        }
+        { linkCode && (
           <a className={"boxProject__linkCode"} href={linkCode}>
             Click to see code on Github
           </a>
