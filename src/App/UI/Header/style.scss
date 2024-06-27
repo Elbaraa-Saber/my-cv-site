@@ -38,13 +38,13 @@
       }
     }
     .header__right {
-      display: flex;
-      flex-direction: column;
+      display: none;
+      flex-direction: row;
       justify-content: right;
       align-items: flex-end;
       gap: 20px;
       position: absolute;
-      bottom: 50px;
+      top: 50px;
       right: 50px;
       .header__infoBox {
         padding: 12px 8px;
@@ -94,7 +94,7 @@
     .header{
         &.header-hide{
             .header__right {
-                bottom: 150px;
+                top: 50px;
                 right: 70px;
             }
         }

@@ -45,7 +45,7 @@ export const Header = () => {
                     <span className="header__info">+7 996 692 5268</span>
                 </div>
                 <div className="header__infoBox">
-                    <a href="mailto:baraasaber22@gmail.com" className="header__info">baraasaber22@gmail.com</a>
+                    <a href="mailto:baraax01@gmail.com" className="header__info">baraax01@gmail.com</a>
                 </div>
             </div>
         </header>
