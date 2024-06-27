@@ -13,12 +13,13 @@
     padding: 20px;
     border-radius: 15px;
     width: 350px;
-    height: 200px;
+    min-height: 200px;
     box-shadow: 1px 1px 4px 2px $SystemBlue5Color;
+    height: fit-content;
     &:hover{
         transform: translateY(-15px);
         box-shadow: 7px 9px 10px 3px $SystemBlue5Color;
-        background-color: $SystemBlue2Color;
+        background-color: $SystemBlueColor;
     }
 }
 .boxProject__title{
