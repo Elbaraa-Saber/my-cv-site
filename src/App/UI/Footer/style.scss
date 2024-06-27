@@ -6,6 +6,7 @@
     align-items: center;
     padding: 50px;
     background-color: $SystemBlue6Color;
+    // background-color: #20414d;
     margin-top: 100px;
 }
 .footer__title{
@@ -13,7 +14,7 @@
     // font-size: 35px;
     // font-weight: 600;
     @include RegularHeaderMediumBold2;  
-    color: $SystemBlueColor;
+    color: $SystemWhiteColor;
     margin: 10px 0;
 }
 .footer__contactBoxes{
@@ -26,7 +27,10 @@
         display: flex;
         align-items: center;
         gap: 15px;
-        color: $SystemWhiteColor;
+        color: $SystemBlueColor;
+        &:hover{
+            color: $SystemBlue1Color;
+        }
     }
     a.footer__box{
         text-decoration: none;
@@ -43,24 +47,24 @@
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        color: $SystemBlueColor;
+        color: $SystemWhiteColor;
         // color: $SystemYellowColor;
     }
     .footer__egypt{
         // font-size: 20px;
         // font-weight: 600;
-        @include RegularParagraph1;
-        color: $SystemWhiteColor;
+        @include RegularParagraph3;
+        color: $SystemBlue1Color;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
-        color: red;
+        // color: red;
         span{
-            color: $SystemWhiteColor;
+            color: $SystemBlue1Color;
         }
         .footer__egyptianFlag{
-            color: black;
+            color: $SystemBlue1Color;
         }
     }
     .footer__egyptIcons{
@@ -71,35 +75,30 @@
         font-size: 35px;
         font-weight: bold;
         margin: 15px 0;
-        .icon:nth-child(1),
-        .icon:nth-child(3),
-        .icon:nth-child(5),
-        .icon:nth-child(7)
+        .icon
         {
-            color: $SystemYellow2Color;
+            color: $SystemWhiteColor;
             &:hover {
-                color: $SystemYellowColor;
+                color: $SystemBlue2Color;
             }
         }
-        .icon:nth-child(2),
-        .icon:nth-child(4),
-        .icon:nth-child(6){
-            color: $SystemBlue3Color;
-            &:hover{
-                color: $SystemBlueColor;
-            }
-        }
+        // .icon:nth-child(3){
+        //     color: $SystemYellow2Color;
+        //     &:hover{
+        //         color: $SystemBlueColor;
+        //     }
+        // }
     }
-    .footer__russia{
-        @include RegularMainFont2;
-        // font-size: 20px;
-        // font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        color: $SystemWhiteColor;
-    }
+    // .footer__russia{
+    //     @include RegularMainFont2;
+    //     // font-size: 20px;
+    //     // font-weight: 600;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     gap: 10px;
+    //     color: $SystemWhiteColor;
+    // }
 }
 
 @media(max-width: $BigMobile){

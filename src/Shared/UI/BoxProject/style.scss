@@ -6,45 +6,45 @@
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    background-color: $SystemYellow2Color;
+    background-color: #4a97b3;
+    background-color: $SystemBlue3Color;
     border: 2px solid $SystemBlue6Color;
     transition: 0.5s;
     padding: 20px;
     border-radius: 15px;
     width: 350px;
     height: 200px;
-    box-shadow: 2px 2px 3px 2px $SystemBlue5Color;
+    box-shadow: 1px 1px 4px 2px $SystemBlue5Color;
     &:hover{
         transform: translateY(-15px);
         box-shadow: 7px 9px 10px 3px $SystemBlue5Color;
-        background-color: $SystemYellowColor;
+        background-color: $SystemBlue2Color;
     }
 }
 .boxProject__title{
     margin: 0 auto 10px;
-    @include RegularParagraphBold;
-    color: $SystemBlue6Color;
+    @include RegularHeaderBold25400;
+    color: $SystemDarkColor;
 }
 .boxProject__creator{
-    @include RegularMainFont1;
-    color: $SystemBlue5Color;
+    @include RegularParagraph3;
+    color: $SystemDarkColor;
 }
 .boxProject__link{
     text-decoration: none;
-    color: $SystemBlue6Color;
-    @include RegularHeaderBold25;
+    color: $SystemWhiteColor;
+    @include RegularParagraph2;
     transition: 0.3s;
     &:hover{
         transform: scale(1.1);
     }
-    span{
-        @include RegularHeaderMedium600;
-        color: $SystemBlue4Color;
-        transition: 0.3s;
-        &:hover{
-            color: $SystemBlue3Color;
-        }
-    }
+    // span{
+    //     // @include RegularHeaderMedium600;
+    //     transition: 0.3s;
+    //     &:hover{
+    //         color: $SystemBlue3Color;
+    //     }
+    // }
 }
 
 @media (max-width: $BigMobile){
@@ -52,7 +52,7 @@
         width: 250px;
     }
     .boxProject__title{
-        @include RegularParagraph1;
+        @include RegularParagraph3;
     }
     .boxProject__creator{
         @include RegularParagraph2;

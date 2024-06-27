@@ -14,7 +14,7 @@
     gap: 30px;
 }
 .experience__company{
-    background-color: $SystemBlue3Color;
+    background-color: $SystemDarkColor;
     width: 600px;
     border-radius: 0 100px 100px 0;
     padding: 30px 15px 30px 0;
@@ -23,13 +23,13 @@
     @include RegularHeaderMediumBold2;
     margin-left: 80px;
     margin-bottom: 20px;
-    color: $SystemDarkColor;
+    color: $SystemWhiteColor;
 }
 .experience__team{
     margin: 20px 0 0 80px;
     @include RegularParagraphBold;
     width: fit-content;
-    color: $SystemDarkColor;
+    color: $SystemBlue1Color;
 }
 .experience__img{
     width: 500px;
@@ -39,7 +39,7 @@
     width: 45%;
     text-align: left;
     color: $SystemBlue6Color;
-    @include RegularParagraph1;
+    @include RegularParagraph3;
 }
 
 @media (max-width: $LaptopWidth){
@@ -74,7 +74,6 @@
         width: 400px;
         border-radius: 50px;
     }
-
 }
 @media (max-width: $BigMobile){
     .experience__company{
@@ -99,8 +98,5 @@
     }
     .experience__img{
         width: 270px;
-    }
-    .aboutMe__txt .aboutMe__techSkills {
-        gap: 3px;
     }
 }

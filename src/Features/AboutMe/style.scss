@@ -19,7 +19,7 @@
     .aboutMe__name{
         @include RegularHeaderBigBold;
         margin: 0 0 0px 0;
-        color: $SystemBlue6Color;
+        color: $SystemDarkColor;
         text-align: center;
     }
     .aboutMe__work{
@@ -28,33 +28,35 @@
         color: $SystemBlue3Color;
     }
     .aboutMe__intro{
-        @include RegularParagraph1;
+        @include RegularParagraph3;
         color: $SystemBlue6Color;
         text-align: left;
         margin-bottom: 10px;
     }
     .aboutMe__langueges{
-        @include RegularParagraph1;
+        @include RegularParagraph3;
         color: $SystemBlue6Color;
         text-align: left;
         margin-bottom: 10px;
     }
     .aboutMe__softSkills{
-        @include RegularParagraph1;
+        @include RegularParagraph3;
         color: $SystemBlue6Color;
         text-align: left;
         margin-bottom: 10px;
     }
     .aboutMe__techSkills{
         display: flex;
-        gap: 5px;
+        // flex-direction: row;
+        // gap: 10px;
         align-items: center;
         justify-content: center;
     }
     .aboutMe__mySkills{
-        @include MainScriptSmall;
-        color: $SystemBlue6Color;
+        @include RegularHeaderMediumBold;
+        color: $SystemDarkColor;
         border: 2px solid $SystemBlue6Color;
+        background-color: $SystemBlue1Color;
         border-radius: 15px;
         width: fit-content;
         text-align: center;
@@ -62,7 +64,13 @@
         padding: 10px 7px;
     }
 }
-
+// @media (max-widt)
+@media (min-width: $LaptopWidth) {
+    .aboutMe__techSkills{
+        gap: 5px;
+        flex-direction: row;
+    }
+}
 @media(max-width: $LaptopWidth){
     .aboutMe{
         flex-direction: column-reverse;
@@ -85,4 +93,14 @@
             margin: 20px auto;
         }
     }
+    .aboutMe__techSkills{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
+// @media (max-width: $IpadWidth){
+//     .aboutMe__techSkills{
+//         flex-direction: column;
+//         gap: 10px;
+//     }
+// }

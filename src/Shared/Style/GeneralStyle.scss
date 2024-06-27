@@ -1,5 +1,6 @@
 $SystemWhiteColor: #ffffff;
 $SystemWhiteDarkColor: #ffffff0d;
+$SystemBlue1Color: #5dd3fd;
 $SystemBlueColor: #5cbcdf;
 $SystemBlue2Color: #57b4d5;
 $SystemBlue3Color: #4a97b3;
@@ -11,6 +12,7 @@ $SystemYellowColor: rgb(255 230 0);
 $SystemYellow2Color: rgb(255 230 0 / 80%);
 
 $SystemDarkColor: #2a2a2a;
+$SystemDark2Color: #282c34;
 $SystemDark2Color: rgb(42 42 42 / 80%);
 // $SystemBrown2Color: #593E25;
 
@@ -38,8 +40,26 @@ $Mobile: 400px;
 @font-face {
   font-family: "PTSerif";
   src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
   font-weight: bold;
   font-style: normal;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
 }
 @font-face {
   font-family: "PTSerif";
@@ -47,6 +67,27 @@ $Mobile: 400px;
   font-weight: bolder;
   font-style: italic;
 }
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-Italic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PTSerif";
+  src: url("./Assest/Font/PTSerif/PTSerif-Italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
 @font-face {
   font-family: "Robot";
   src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf");
@@ -86,76 +127,17 @@ $Mobile: 400px;
 
 // headers
 
-@mixin RegularHeaderMediumBold {
-  font-family: "Robot";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: bold;
-}
-
-@mixin RegularHeaderMedium600 {
-  font-family: "Robot";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-}
-@mixin RegularHeaderMediumBold2 {
-  font-family: "Robot";
-  font-size: 35px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularHeaderBolder {
-  font-family: "Robot";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: bolder;
-}
 @mixin RegularHeaderBold {
   font-family: "Robot";
   font-size: 17px;
   font-style: normal;
   font-weight: bold;
 }
-@mixin RegularHeaderBold25 {
+@mixin RegularMainFont4 {
   font-family: "Robot";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: bold;
-}
-
-@mixin RegularHeaderBigBold {
-  font-family: "Robot";
-  font-size: 50px;
-  font-style: normal;
-  font-weight: bold;
-}
-
-// regular
-
-@mixin RegularParagraphBold {
-  font-family: "PTSerif";
-  font-size: 30px;
-  font-style: italic;
-  font-weight: bold;
-}
-@mixin RegularParagraph2 {
-  font-family: "PTSerif";
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-}
-@mixin RegularParagraph3 {
-  font-family: "PTSerif";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-}
-@mixin RegularParagraph1 {
-  font-family: "PTSerif";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 @mixin RegularMainFont1 {
   font-family: "Robot";
@@ -175,19 +157,83 @@ $Mobile: 400px;
   font-style: normal;
   font-weight: bold;
 }
+@mixin RegularHeaderBold25 {
+  font-family: "Robot";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin RegularHeaderBold25400 {
+  font-family: "Robot";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+}
+@mixin RegularHeaderMediumBold {
+  font-family: "Robot";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+}
 @mixin RegularMainFont3 {
   font-family: "Robot";
   font-size: 30px;
   font-style: normal;
   font-weight: bold;
 }
-@mixin RegularMainFont4 {
+@mixin RegularHeaderMedium600 {
   font-family: "Robot";
-  font-size: 18px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
+}
+@mixin RegularHeaderMediumBold2 {
+  font-family: "Robot";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin RegularHeaderBolder {
+  font-family: "Robot";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bolder;
+}
+@mixin RegularHeaderBigBold {
+  font-family: "Robot";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bold;
 }
 
+
+
+// regular
+
+@mixin RegularParagraph {
+  font-family: "PTSerif";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin RegularParagraph2 {
+  font-family: "PTSerif";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin RegularParagraph3 {
+  font-family: "PTSerif";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin RegularParagraphBold {
+  font-family: "PTSerif";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
 // not normal
 
 @mixin MainScriptOverBig {

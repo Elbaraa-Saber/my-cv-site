@@ -2,20 +2,16 @@
 
 .skill{
     background-color: $SystemDarkColor;
-    color: $SystemBlueColor;
+    color: $SystemWhiteColor;
     padding: 7px 10px;
     border-radius: 10px;
-    // font-size: 17px;
-    // font-weight: 600;
-    // @include RegularParagraph2;
-    @include RegularHeaderBold;
+    @include RegularParagraph2;
     transition: 0.5s;
-    // &:hover{
-    //     // transform: scale(1.2);
-    //     color: $SystemBlueColor;
-    //     box-shadow: 2px 2px 2px 2px $SystemBlueColor;
-    //     // border: 1px solid $SystemBlueColor;
-    // }
+}
+@media (max-width: $LaptopWidth){
+    .skill{
+        box-shadow: 2px 3px 5px 1px $SystemBlue3Color;
+    }
 }
 @media (max-width: $BigMobile){
     .skill{

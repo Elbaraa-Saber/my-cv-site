@@ -25,10 +25,10 @@ export const AboutMe = () => {
         </p>
         <h2 className="aboutMe__mySkills">Мои навыки</h2>
         <p className="aboutMe__techSkills">
-          <Skill skill="React" /><Skill skill="JavaScript" />
-          <Skill skill="TypeScript" /><Skill skill="HTML" />
-          <Skill skill="CSS" /><Skill skill="SCSS" /><Skill skill="API" />
-          <Skill skill="BEM" />
+          <Skill skill="TypeScript" /><Skill skill="JavaScript" /><Skill skill="HTML" /><Skill skill="React" />
+          <Skill skill="SCSS" /><Skill skill="BEM" /><Skill skill="API" />
+          <Skill skill="CSS" />
+          
         </p>
       </div>
     </section>

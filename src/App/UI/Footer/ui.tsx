@@ -17,7 +17,7 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__contact">
-        <div className="footer__title">Свяжитесь с нами</div>
+        <div className="footer__title">Свяжитесь со мной</div>
         <div className="footer__contactBoxes">
           <a href="mailto:baraasaber22@gmail.com" className="footer__box">
             baraax01@gmail.com
@@ -55,7 +55,6 @@ export const Footer = () => {
                 <GiEgyptianUrns className="icon"/>
                 <GiEgyptianWalk className="icon"/>
             </div>
-            <div className="footer__russia">Учусь И живу в Росии</div>
       </div>
     </footer>
   );
