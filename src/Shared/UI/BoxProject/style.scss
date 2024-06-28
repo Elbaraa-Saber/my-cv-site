@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    background-color: $SystemBlue2Color;
+    background-color: $SystemBlue3Color;
     transition: 0.5s;
     padding: 20px;
     border-radius: 15px;
@@ -17,7 +17,7 @@
     &:hover{
         transform: translateY(-15px);
         box-shadow: 6px 8px 10px 0px $SystemBlue5Color;
-        background-color: $SystemBlueColor;
+        background-color: $SystemBlue3Color;
     }
 }
 .boxProject__title{
