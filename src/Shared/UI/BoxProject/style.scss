@@ -7,9 +7,10 @@
     flex-direction: column;
     gap: 15px;
     background-color: $SystemBlue3Color;
+    border: 1px solid $SystemBlue4Color;
     transition: 0.5s;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 12px;
     width: 350px;
     min-height: 200px;
     box-shadow: 4px 4px 5px 0px $SystemBlue5Color;
