@@ -32,6 +32,7 @@ export const AboutMe = () => {
           <Skill skill="TypeScript" />
           <Skill skill="JavaScript" />
           <Skill skill="HTML" />
+          <Skill skill="Redux" />
           <Skill skill="React" />
           <Skill skill="SCSS" />
           <Skill skill="BEM" />
