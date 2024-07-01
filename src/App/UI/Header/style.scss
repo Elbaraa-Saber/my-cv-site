@@ -3,65 +3,39 @@
 
 .header {
   position: fixed;
-  padding: 10px 0;
+  // padding: 0px 96px;
   width: 100%;
+  height: 96px;
   z-index: 1000;
-  &.header-show {
-    background-color: $SystemDarkColor;
-    .header__infoBox {
-      background-color: transparent;
-    }
-  }
-  .header__container{
-    transition: 0.5s;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
-  &.header-hide {
-    background-color: transparent;
-    height: 100vh;
-    width: 100%;
-    .header__img {
-      display: none;
-    }
-    .header__left {
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      .header__name {
-        margin: 0 auto;
-        letter-spacing: -0.5px;
-        color: $SystemBlue6Color;
-      }
-      .header__work {
-        color: $SystemBlue6Color;
-        @include MainScriptNorm;
-      }
-    }
-    .header__right {
-      display: none;
-    }
+  background-color: $DarkMainColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $BorderColor;
+  .header__border{
+    position: absolute;
+    width: 75%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-left: 1px solid $BorderColor;
   }
 }
 .header__left{
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
+  margin-left: 96px;
+  flex-direction: column;
 }
-.header__img {
-  width: 85px;
-  border-radius: 50%;
-  border: 4px solid $SystemBlue3Color ;
-  transition: 0.5s;
-  &:hover {
-    border-color: $SystemBlueColor;
-  }
+.header__right{
+  margin-right: 96px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
 }
 .header__name {
-  @include RegularHeaderBolder;
+  @include LogoFont;
   margin: 0 auto;
   letter-spacing: -0.5px;
   color: $SystemWhiteColor;
@@ -71,17 +45,13 @@
   @include MainScriptNorm;
   color: $SystemBlueColor;
 }
+
 .header__infoBox {
-  background-color: $SystemDarkColor;
-  border-radius: 20px;
-  transition: 0.5s;
+  text-decoration: none;
   .header__info {
-    @include RegularMainFont1;
-    color: $SystemWhiteColor;
+    @include FontNormal18;
+    color: $BrightSecondColor;
     margin: 5px auto;
-  }
-  a.header__info {
-    text-decoration: none;
   }
 }
 

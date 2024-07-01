@@ -1,3 +1,91 @@
+// NEW COLORS STYLE 
+$DarkMainColor: #222831;
+$DarkSecondColor: #393E46;
+$BrightMainColor: #00ADB5;
+$BrightSecondColor: #EEEEEE;
+$BorderColor: rgb(238 238 238 / 10%);
+
+
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('./Assest/Font/Oswald/Oswald-VariableFont_wght.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Assest/Font/Poppins/Poppins-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Assest/Font/Poppins/Poppins-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin Header {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 96px;
+  font-weight: bold;
+}
+@mixin FontNormal18 {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin LogoFont {
+  font-family: 'oswald';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $SystemWhiteColor: #ffffff;
 $SystemWhiteDarkColor: #ffffff0d;
 $SystemBlue1Color: #5dd3fd;
@@ -257,7 +345,7 @@ $Mobile: 400px;
 }
 @mixin MainScriptNorm {
   font-family: "NanumBrushScript";
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 40.57px;
   text-align: center;

@@ -1,12 +1,22 @@
+@import '../Shared/Style/GeneralStyle.scss';
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.App__border{
+  position: absolute;
+  width: 75%;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  border-left: 1px solid $BorderColor;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
