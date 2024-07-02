@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import photoIntenarship from "../../Shared/Assets/Imgs/intenarship.jpg";
-import { Img, Title } from "../../Shared/index.ts";
+import { Title } from "../../Shared/index.ts";
 
 export const Experience = () => {
   return (
@@ -11,11 +11,11 @@ export const Experience = () => {
         <div className="experience__content">
           <div className="experience__company">
             <div className="experience__companyName">Академия Абдрашитова</div>
-            <Img
+            {/* <Img
               imgSrc={photoIntenarship}
               imgAlt="intenarship"
               className="experience__img"
-            />
+            /> */}
             <div className="experience__team">Команда « Новый Дуровень »</div>
           </div>
           <div className="experience__txt">

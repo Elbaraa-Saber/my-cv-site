@@ -26,6 +26,12 @@ $BorderColor: rgb(238 238 238 / 10%);
   font-style: normal;
 }
 
+@mixin BoldFont64{
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 64px;
+  font-weight: bold;
+}
 @mixin Header {
   font-family: 'Poppins';
   font-weight: bold;

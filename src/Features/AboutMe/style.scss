@@ -1,113 +1,70 @@
 @import "../../Shared/Style/GeneralStyle.scss";
 
 .aboutMe {
-  height: 100vh;
   padding: 50px 0;
-  height: 100%;
+  height: calc(100vh - 96px );
   background-color: $DarkMainColor;
-  .aboutMe__container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-  }
-}
-.aboutMe__img {
-  height: 400px;
-  border-radius: 100px 0 100px 0;
-  box-shadow: 3px 3px 3px 3px $SystemBlue4Color;
-}
-.aboutMe__txt {
-  width: 60%;
-  .aboutMe__name {
-    @include RegularHeaderBigBold;
-    margin: 0 0 0px 0;
-    color: $SystemDarkColor;
-    text-align: center;
-  }
-  .aboutMe__headText {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    &:hover {
-      .aboutMe__work {
-        &::after {
-          width: 50%;
-          left: 0;
-        }
-        &::before {
-          width: 50%;
-          right: 0;
-        }
+  display: flex;
+  align-items: start;
+  .aboutMe__left{
+    width: 50%;
+    padding-left: 96px;
+    z-index: 5;
+    .aboutMe__title{
+      color: $BrightSecondColor;
+      @include BoldFont64;
+      span{
+        color: $BrightMainColor;
       }
     }
-  }
-  .aboutMe__work {
-    @include RegularMainFont2;
-    width: fit-content;
-    margin: 0px 0 10px 0;
-    color: $SystemBlue3Color;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      left: -70px;
-      // bottom: 0;
-      bottom: -10px;
-      width: 0px;
-      height: 3px;
-      background-color: $SystemBlue5Color;
-      transition: 0.7s;
+    .aboutMe__description{
+      color: $BrightSecondColor;
+      @include FontNormal18;
+      text-align: left;
     }
-    &::before {
-      content: "";
-      position: absolute;
-      right: -70px;
-      bottom: -10px;
-      width: 0px;
-      height: 3px;
-      background-color: $SystemBlue5Color;
-      transition: 0.7s;
+    .abouMe__skills{
+      display: flex;
+      // align-items: start;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    .aboutMe__additionalSills{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
     }
   }
-  .aboutMe__intro {
-    @include RegularParagraph3;
-    color: $SystemBlue6Color;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .aboutMe__langueges {
-    @include RegularParagraph3;
-    color: $SystemBlue6Color;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .aboutMe__softSkills {
-    @include RegularParagraph3;
-    color: $SystemBlue6Color;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .aboutMe__techSkills {
+  .aboutMe__right{
+    height: 100%;
     display: flex;
+    justify-content: end;
+    padding-right: 96px;
     align-items: center;
-    justify-content: space-between;
-  }
-  .aboutMe__mySkills {
-    @include RegularHeaderMediumBold;
-    color: $SystemDarkColor;
-    box-shadow: 2px 2px 4px 0px $SystemBlue6Color;
-    background-color: $SystemBlueColor;
-    border-radius: 12px;
-    border: 1px solid $SystemBlue2Color;
-    width: fit-content;
-    text-align: center;
-    margin: 50px auto 20px;
-    padding: 10px 50px;
-  }
+    position: relative;
+    width: 50%;
+    .aboutMe__backImg{
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        width: 400px;
+        height: 350px;
+    }
+    .aboutMe__officeImg{
+        z-index: 100;
+    }
+    .aboutMe__floor{
+        position: absolute;
+        bottom: 16%;
+        z-index: 99;
+    }
 }
+}
+
+
+
 @media (min-width: $LaptopWidth) {
   .aboutMe__techSkills {
     gap: 5px;
