@@ -155,6 +155,14 @@
   .header {
     &.header-hide {
       height: 50vh;
+      .header__dropDown{
+        top: 0px;
+        left: -30px;
+      }
+      .header__container{
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
       .header__right {
         display: none;
       }
@@ -184,6 +192,12 @@
       height: 0px;
       .header__right {
         display: none;
+      }
+      .header__dropDown{
+        left: 10px;
+        font-size: 15px;
+        width: 70px;
+        height: 30px;
       }
     }
     .header__left {
