@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Header } from './UI/Header/ui.tsx';
 import {  BrowserRouter as Router } from 'react-router-dom';
@@ -7,11 +7,12 @@ import { MainPage } from '../Pages/index.ts';
 
 
 function App() {
+  const [language , setLanguage] = useState<"Russian" | "English">('English');
   return (
     <Router>
       <div className="App">
-        <Header/>
-        <MainPage/>
+        <Header selectedLang={language} setSelectedLang={setLanguage}/>
+        <MainPage selectedLang={language}/>
         <Footer/>
       </div>
     </Router>

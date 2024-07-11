@@ -14,12 +14,16 @@ import { GiEgyptianUrns } from "react-icons/gi";
 import { GiEgyptianWalk } from "react-icons/gi";
 import { FaTelegramPlane } from "react-icons/fa";
 
-export const Footer = () => {
+interface Props {
+  className?: string ;
+  selectedLang: "Russian" | "English";
+}
+export const Footer = ({className, selectedLang}: Props) => {
   return (
     <footer className="footer">
       <div className="container footer__container">
         <div className="footer__contact">
-          <div className="footer__title">Свяжитесь со мной</div>
+          <div className="footer__title">{selectedLang === 'Russian'? 'Свяжитесь со мной' : 'Contact me'}</div>
           <div className="footer__contactBoxes">
             <a href="mailto:baraasaber22@gmail.com" className="footer__box">
               baraax01@gmail.com

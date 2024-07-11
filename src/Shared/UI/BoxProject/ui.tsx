@@ -10,6 +10,7 @@ interface Props {
   className?: string;
   linkCode: string;
   intenarship?: boolean;
+  selectedLang: "Russian" | "English";
 }
 
 export const BoxProject = ({
@@ -20,24 +21,47 @@ export const BoxProject = ({
   className,
   linkCode,
   intenarship,
+  selectedLang,
 }: Props) => {
+  const Creator = () => {
+    if (intenarship) {
+      if (selectedLang === "Russian") {
+        if (withTeam) {
+          return <>Сделано командой</>;
+        } else {
+          return <>Сделано мной на стажировке</>;
+        }
+      } else {
+        if (withTeam) {
+          return <>Made by the team</>;
+        } else {
+          return <>Made by me during the internship</>;
+        }
+      }
+    }
+  };
+
   return (
     <div className={`boxProject ${className}`}>
       <div className="">
         <h3 className="boxProject__title">{explain}</h3>
-        <div className="boxProject__creator">
-          {intenarship && (withTeam
-            ? "Сделано командой"
-            : "Сделано мной на стажировке")}
-        </div>
+        <div className="boxProject__creator">{Creator()}</div>
       </div>
       <div className="">
-        {link &&
+        {link && (
           <a className="boxProject__link" href={link}>
-            Нажмите, чтобы увидеть <span>{label ? label : "Сайт"}</span>
+            {selectedLang === "Russian" ? (
+              <>
+                Нажмите, чтобы увидеть <span>{label ? label : "Сайт"}</span>
+              </>
+            ) : (
+              <>
+                Click to see <span>{label ? label : "website"}</span>
+              </>
+            )}
           </a>
-        }
-        { linkCode && (
+        )}
+        {linkCode && (
           <a className={"boxProject__linkCode"} href={linkCode}>
             Click to see code on Github
           </a>
