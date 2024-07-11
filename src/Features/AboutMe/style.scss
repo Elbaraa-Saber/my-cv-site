@@ -13,6 +13,7 @@
     .aboutMe__title{
       color: $BrightSecondColor;
       @include BoldFont64;
+      margin: 0;
       span{
         color: $BrightMainColor;
       }

@@ -16,9 +16,9 @@ export const AboutMe = ({ className, skills, additionalSkills }: Props) => {
     <section className="aboutMe">
       <div className="aboutMe__left">
         <div className="aboutMe__header">
-          <div className="aboutMe__title">
+          <h2 className="aboutMe__title">
             About <span>me</span>
-          </div>
+          </h2>
           <p className="aboutMe__description">
             Меня зовут Салем Эльбараа, обучаюсь по специальности: "Программная
             инженерия" в НИ ТГУ.
