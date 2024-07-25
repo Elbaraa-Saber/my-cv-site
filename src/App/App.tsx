@@ -7,13 +7,13 @@ import { MainPage } from '../Pages/index.ts';
 
 
 function App() {
-  const [language , setLanguage] = useState<"Russian" | "English">('English');
+  const [language , setLanguage] = useState<"Russian" | "English">('Russian');
   return (
     <Router>
       <div className="App">
         <Header selectedLang={language} setSelectedLang={setLanguage}/>
         <MainPage selectedLang={language}/>
-        <Footer/>
+        <Footer selectedLang={language}/>
       </div>
     </Router>
   );
