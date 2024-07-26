@@ -1,7 +1,7 @@
 @import "../../Shared/Style/GeneralStyle.scss";
 
 .aboutMe {
-  padding: 50px 0;
+  padding: 100px 0;
   height: calc(100vh - 96px);
   background-color: $DarkMainColor;
   display: flex;
@@ -22,7 +22,7 @@
 }
 .aboutMe__description {
   color: $BrightSecondColor;
-  @include FontNormal18;
+  @include FontNormal25;
   text-align: left;
 }
 .abouMe__skills {

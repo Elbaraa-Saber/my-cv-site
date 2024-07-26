@@ -46,11 +46,27 @@
 }
 
 .header__infoBox {
-  text-decoration: none;
+  position: relative;
+  ::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $BrightMainColor;
+    transition: 0.5s;
+  }
+  &:hover{
+    ::after{
+      width: 100%;
+    }
+  }
   .header__info {
     @include FontNormal18;
     color: $BrightSecondColor;
     margin: 5px auto;
+    cursor: pointer;
   }
 }
 

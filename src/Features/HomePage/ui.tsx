@@ -7,9 +7,12 @@ import Man from "../../Shared/Assets/Imgs/Group2346.png";
 import { FloorIcon } from "../../Shared/UI/Icons/Floor.tsx";
 import { DownArrow } from "../../Shared/UI/Icons/DownArrow.tsx";
 
-export const HomePage = () => {
+interface Props{
+  id: string
+}
+export const HomePage = ({id}: Props) => {
   return (
-    <section className="homePage">
+    <section className="homePage" id={id}>
       <div className="homePage__left">
         <ArrowIcon className="homePage__arrowIcon"/>
         <h1 className="homePage__work">

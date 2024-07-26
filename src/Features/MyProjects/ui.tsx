@@ -12,6 +12,9 @@ import Temp4 from "../../Shared/Assets/Imgs/Temp4.jpg";
 import TempJS from "../../Shared/Assets/Imgs/TempJS.jpg";
 import Tickets from "../../Shared/Assets/Imgs/Tickets.jpg";
 
+interface Props {
+  id: string;
+}
 const ProjectsArr = [
   {
     id: 1,
@@ -110,13 +113,13 @@ const ProjectsArr = [
     link: "https://elbaraa-saber.github.io/ticketsapp_ReactJS/",
   },
 ];
-export const MyProjects = () => {
+export const MyProjects = ({id}: Props) => {
   const [filter, setFilter] = useState<
     "React" | "HTML+CSS" | "JS" | "ReactTS" | "all"
   >("all");
 
   return (
-    <section className="myProjects">
+    <section className="myProjects" id={id}>
       <div className="myProjects__head">
         <h2 className="myProjects__title">
           My recent <span>works</span>

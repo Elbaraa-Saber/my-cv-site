@@ -6,9 +6,13 @@ import { MusicIcon } from "../../Shared/UI/Icons/MusicIcon.tsx";
 import { LampIcon } from "../../Shared/UI/Icons/LampIcon.tsx";
 import { SecondArrow } from "../../Shared/UI/Icons/SecondArrow.tsx";
 
-export const Experience = () => {
+interface Props{
+  id: string;
+}
+
+export const Experience = ({id}: Props) => {
   return (
-    <section className="experience">
+    <section className="experience" id={id}>
       <div className="container experience__container">
         <div className="experience__content">
           <div className="experience__company">
