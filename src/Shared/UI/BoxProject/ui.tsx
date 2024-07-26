@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./style.scss";
 import { NavLink } from "react-router-dom";
 
@@ -10,6 +10,7 @@ interface Props {
   className?: string;
   linkCode: string;
   intenarship?: boolean;
+  img?: string;
 }
 
 export const BoxProject = ({
@@ -20,6 +21,7 @@ export const BoxProject = ({
   className,
   linkCode,
   intenarship,
+  img
 }: Props) => {
   return (
     <div className={`boxProject ${className}`}>
@@ -31,10 +33,13 @@ export const BoxProject = ({
             : "Сделано мной на стажировке")}
         </div>
       </div>
+      <div className="boxProject__img">
+        <img src={img} alt="dsf"/>
+      </div>
       <div className="">
         {link &&
           <a className="boxProject__link" href={link}>
-            Нажмите, чтобы увидеть <span>{label ? label : "Сайт"}</span>
+            Нажмите, чтобы увидеть {label ? label : "Сайт"}
           </a>
         }
         { linkCode && (

@@ -1,26 +1,74 @@
-@import '../../Shared/Style/GeneralStyle.scss';
+@import "../../Shared/Style/GeneralStyle.scss";
 
-.myProjects{
-    margin-top: 50px;
+.myProjects {
+  margin: 80px 0px;
+  background-image: url(../../Shared/Assets/Imgs/doodleItems.jpg);
+  // margin-top: 100px;
+  background-repeat: repeat;
+  height: 100vh;
+  // padding-left: 120px;
+  padding: 100px 0px;
+  height: fit-content;
+  z-index: 2;
+  position: relative;
 }
-
-.myProjects__boxes{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 30px;
-    margin: auto;
+.myProjects__container {
+  padding-top: 48px;
 }
-.myProjects__box{
-    margin: auto;
-}
-
-@media (max-width: $BigMobile){
-    .myProjects__boxes{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+.myProjects__head {
+  padding-left: 120px;
+  .myProjects__title {
+    text-align: left;
+    @include BoldFont64;
+    color: $BrightSecondColor;
+    span {
+      color: $BrightMainColor;
     }
+    margin: 0 0 16px 0;
+  }
 }
-@media (max-width: $Mobile){
-    .myProjects__boxes{
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    }
+.myProject__filter {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+.myProject__choise {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 32px;
+  width: fit-content;
+  background: $DarkSecondColor;
+  border-radius: 24px;
+  @include FontNormal18;
+  color: $BrightSecondColor;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  &.myProject__choise-chicked {
+    background-color: $BrightMainColor;
+  }
+}
+
+.myProjects__boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  gap: 30px;
+  margin: auto;
+}
+.myProjects__box {
+  margin: auto;
+}
+
+@media (max-width: $BigMobile) {
+  .myProjects__boxes {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+@media (max-width: $Mobile) {
+  .myProjects__boxes {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
 }

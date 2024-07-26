@@ -2,69 +2,84 @@
 
 .aboutMe {
   padding: 50px 0;
-  height: calc(100vh - 96px );
+  height: calc(100vh - 96px);
   background-color: $DarkMainColor;
   display: flex;
   align-items: start;
-  .aboutMe__left{
-    width: 50%;
-    padding-left: 96px;
-    z-index: 5;
-    .aboutMe__title{
-      color: $BrightSecondColor;
-      @include BoldFont64;
-      margin: 0;
-      span{
-        color: $BrightMainColor;
-      }
-    }
-    .aboutMe__description{
-      color: $BrightSecondColor;
-      @include FontNormal18;
-      text-align: left;
-    }
-    .abouMe__skills{
-      display: flex;
-      // align-items: start;
-      justify-content: space-between;
-      flex-direction: column;
-      margin-bottom: 20px;
-      gap: 10px;
-    }
-    .aboutMe__additionalSills{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
+}
+.aboutMe__left {
+  width: 50%;
+  padding-left: 96px;
+  z-index: 5;
+  .aboutMe__title {
+    color: $BrightSecondColor;
+    @include BoldFont64;
+    margin: 0;
+    span {
+      color: $BrightMainColor;
     }
   }
-  .aboutMe__right{
-    height: 100%;
-    display: flex;
-    justify-content: end;
-    padding-right: 96px;
-    align-items: center;
-    position: relative;
-    width: 50%;
-    .aboutMe__backImg{
-        position: absolute;
-        top: 30%;
-        transform: translateY(-50%);
-        width: 400px;
-        height: 350px;
-    }
-    .aboutMe__officeImg{
-        z-index: 100;
-    }
-    .aboutMe__floor{
-        position: absolute;
-        bottom: 16%;
-        z-index: 99;
-    }
 }
+.aboutMe__description {
+  color: $BrightSecondColor;
+  @include FontNormal18;
+  text-align: left;
 }
+.abouMe__skills {
+  display: flex;
+  // align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.aboutMe__additionalSills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.aboutMe__right {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 96px;
+  align-items: center;
+  position: relative;
+  width: 50%;
+}
+.aboutMe__backImg {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 350px;
+}
+.aboutMe__officeImg {
+  z-index: 100;
+}
+.aboutMe__floor {
+  position: absolute;
+  bottom: 16%;
+  z-index: 99;
+}
+.aboutMe__zIcons{
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  .aboutMe__zTop{
+    position: absolute;
+    left: 30px;
+    top: -50px;
+  }
+  .aboutMe__zBetween{
+    position: absolute;
+    left: 15px;
+    top: -25px;
 
-
+  }
+}
 
 @media (min-width: $LaptopWidth) {
   .aboutMe__techSkills {

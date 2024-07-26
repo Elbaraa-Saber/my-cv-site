@@ -1,6 +1,6 @@
 import React from "react";
 import './style.scss';
-import { AboutMe, HomePage, Experience, MyProjects, OldProjects } from "../../../Features/index.ts";
+import { AboutMe, HomePage, Experience, MyProjects } from "../../../Features/index.ts";
 
 
 export const MainPage = () => {
@@ -25,7 +25,6 @@ export const MainPage = () => {
             <AboutMe skills={skillsArr} additionalSkills={additionalSkills}/>
             <Experience/>
             <MyProjects/>
-            <OldProjects/>
         </div>
     )
 }

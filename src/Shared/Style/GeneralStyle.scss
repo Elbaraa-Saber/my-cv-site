@@ -50,6 +50,18 @@ $BorderColor: rgb(238 238 238 / 10%);
   font-weight: normal;
   font-style: normal;
 }
+@mixin FontNormal15 {
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin FontNormal30 {
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+}
 
 @mixin LogoFont {
   font-family: 'oswald';

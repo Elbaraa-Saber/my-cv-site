@@ -1,70 +1,83 @@
-@import '../../Style/GeneralStyle.scss';
+@import "../../Style/GeneralStyle.scss";
 
-.boxProject{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    background-color: $SystemBlue3Color;
-    border: 1px solid $SystemBlue4Color;
-    transition: 0.5s;
-    padding: 20px;
-    border-radius: 12px;
-    width: 350px;
-    min-height: 200px;
-    box-shadow: 4px 4px 5px 0px $SystemBlue5Color;
-    height: fit-content;
-    &:hover{
-        transform: translateY(-15px);
-        box-shadow: 6px 8px 10px 0px $SystemBlue5Color;
-        background-color: $SystemBlue3Color;
-    }
+.boxProject {
+  /* Frame 11 */
+
+  width: 368px;
+  min-height: 280px;
+  height: fit-content;
+
+//   background: $BorderColor;
+  background: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+//   border: 1px solid $SystemBlue4Color;
+  transition: 0.5s;
+  padding: 20px;
+//   box-shadow: 4px 4px 5px 0px $SystemBlue5Color;
+//   height: fit-content;
+  &:hover {
+    transform: translateY(-15px);
+    // box-shadow: 6px 8px 10px 0px $SystemBlue5Color;
+    // background-color: $SystemBlue3Color;
+  }
 }
-.boxProject__title{
-    margin: 0 auto 10px;
-    @include RegularHeaderBold25400;
-    color: $SystemWhiteColor;
+.boxProject__title {
+  margin: 0 auto;
+  @include FontNormal18;
+  color: $BrightSecondColor;
 }
-.boxProject__creator{
-    @include RegularParagraph2;
-    color: $SystemDarkColor;
+.boxProject__creator {
+  @include FontNormal18;
+  color: $BrightMainColor;
 }
-.boxProject__link{
-    text-decoration: none;
-    color: $SystemBlue6Color;
-    @include RegularParagraph2;
-    transition: 0.3s;
-    display: block;
-    &:hover{
-        transform: scale(1.1);
+.boxProject__link {
+  text-decoration: none;
+  color: $BrightMainColor;
+  @include FontNormal18;
+  transition: 0.3s;
+  display: block;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.boxProject__img{
+    // height: 100px;
+    img{
+        height: 150px;
+        border-radius: 6px;
     }
 }
 .boxProject__linkCode {
-    text-decoration: none;
-    color: $SystemBlue6Color;
-    @include MainScriptOverSmall;
+  text-decoration: none;
+  color: $BrightSecondColor;
+  @include FontNormal15;
 }
 
-@media (max-width: $BigMobile){
-    .boxProject{
-        width: 250px;
-    }
-    .boxProject__title{
-        @include RegularParagraph3;
-    }
-    .boxProject__creator{
-        @include RegularParagraph2;
-    }
-    .boxProject__link{
-        @include RegularMainFont1;
-        span{
-            font-size: 22px;
-        }
-    }
-}
-@media (max-width: $Mobile){
-    .boxProject{
-        width: 215px;
-    }
-}
+// @media (max-width: $BigMobile) {
+//   .boxProject {
+//     width: 250px;
+//   }
+//   .boxProject__title {
+//     @include RegularParagraph3;
+//   }
+//   .boxProject__creator {
+//     @include RegularParagraph2;
+//   }
+//   .boxProject__link {
+//     @include RegularMainFont1;
+//     span {
+//       font-size: 22px;
+//     }
+//   }
+// }
+// @media (max-width: $Mobile) {
+//   .boxProject {
+//     width: 215px;
+//   }
+// }

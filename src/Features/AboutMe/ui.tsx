@@ -5,6 +5,7 @@ import { Skill } from "../../Shared/index.ts";
 import OfficeImg from "../../Shared/Assets/Imgs/Group62.png";
 import Background from "../../Shared/Assets/Imgs/doodleItems.jpg";
 import { FloorIcon } from "../../Shared/UI/Icons/Floor.tsx";
+import { SleepZIcon } from "../../Shared/UI/Icons/SleepZIcon.tsx";
 
 interface Props {
   className?: string;
@@ -39,6 +40,11 @@ export const AboutMe = ({ className, skills, additionalSkills }: Props) => {
         </div>
       </div>
       <div className="aboutMe__right">
+        <div className="aboutMe__zIcons">
+          <SleepZIcon className="aboutMe__zTop" />
+          <SleepZIcon className="aboutMe__zBetween" />
+          <SleepZIcon className="aboutMe__zUnder" />
+        </div>
         <img src={Background} alt="background" className="aboutMe__backImg" />
         <img src={OfficeImg} alt="office" className="aboutMe__officeImg" />
         <FloorIcon className="aboutMe__floor" />

@@ -1,6 +1,5 @@
 @import "../../../Shared/Style/GeneralStyle.scss";
 
-
 .header {
   position: fixed;
   // padding: 0px 96px;
@@ -12,23 +11,23 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid $BorderColor;
-  .header__border{
+  .header__border {
     position: absolute;
-    width: 75%;
-    right: 0;
+    width: 0px;
+    left: 25%;
     top: 0;
     height: 100%;
-    border-left: 1px solid $BorderColor;
+    border-left: 1px solid rgba(238, 238, 238, 0.1);
   }
 }
-.header__left{
+.header__left {
   display: flex;
   align-items: center;
   gap: 0px;
   margin-left: 96px;
   flex-direction: column;
 }
-.header__right{
+.header__right {
   margin-right: 96px;
   display: flex;
   align-items: center;
@@ -55,71 +54,70 @@
   }
 }
 
-
-@media  (max-width: $TvWidth) {
-    .header{
-        &.header-hide{
-            .header__right {
-                top: 50px;
-                right: 70px;
-            }
-        }
+@media (max-width: $TvWidth) {
+  .header {
+    &.header-hide {
+      .header__right {
+        top: 50px;
+        right: 70px;
+      }
     }
+  }
 }
-@media  (max-width: $LaptopWidth) {
-    .header{
-        &.header-hide{
-            background-color: transparent;
-            height: 100%;
-            width: 100%;
-            .header__right {
-              display: none;
-            }
-        }
+@media (max-width: $LaptopWidth) {
+  .header {
+    &.header-hide {
+      background-color: transparent;
+      height: 100%;
+      width: 100%;
+      .header__right {
+        display: none;
+      }
     }
+  }
 }
-@media  (max-width: $IpadWidth) {
-    .header{
-        &.header-hide{
-            height: 50vh;
-            .header__right {
-              display: none;
-            }
-            .header__left{
-              display: none
-            }
-        }
-        .header__left{
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-            .header__name{
-                @include RegularHeaderMediumBold;
-            }
-            .header__work{
-                @include MainScriptOverSmall;
-            }
-        }
-        .header__right {
-          display: none;
-        }
+@media (max-width: $IpadWidth) {
+  .header {
+    &.header-hide {
+      height: 50vh;
+      .header__right {
+        display: none;
+      }
+      .header__left {
+        display: none;
+      }
     }
+    .header__left {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .header__name {
+        @include RegularHeaderMediumBold;
+      }
+      .header__work {
+        @include MainScriptOverSmall;
+      }
+    }
+    .header__right {
+      display: none;
+    }
+  }
 }
-@media  (max-width: $BigMobile) {
-    .header{
-        &.header-hide{
-            height: 0px;
-            .header__right {
-                display: none;
-            }
-        }
-        .header__left{
-            .header__name{
-                @include RegularHeaderMediumBold;
-            }
-            .header__work{
-                @include MainScriptOverSmall;
-            }
-        }
+@media (max-width: $BigMobile) {
+  .header {
+    &.header-hide {
+      height: 0px;
+      .header__right {
+        display: none;
+      }
     }
+    .header__left {
+      .header__name {
+        @include RegularHeaderMediumBold;
+      }
+      .header__work {
+        @include MainScriptOverSmall;
+      }
+    }
+  }
 }
