@@ -11,13 +11,13 @@
   width: 50%;
   padding-left: 96px;
   z-index: 5;
-  .aboutMe__title {
-    color: $BrightSecondColor;
-    @include BoldFont64;
-    margin: 0;
-    span {
-      color: $BrightMainColor;
-    }
+}
+.aboutMe__title {
+  color: $BrightSecondColor;
+  @include BoldFont64;
+  margin: 0;
+  span {
+    color: $BrightMainColor;
   }
 }
 .aboutMe__description {
@@ -43,8 +43,8 @@
   height: 100%;
   display: flex;
   justify-content: end;
-  padding-right: 96px;
   align-items: center;
+  padding-right: 96px;
   position: relative;
   width: 50%;
 }
@@ -81,83 +81,62 @@
   }
 }
 
-@media (min-width: $LaptopWidth) {
-  .aboutMe__techSkills {
-    gap: 5px;
-    flex-direction: row;
+@media (max-width: $LaptopWidth){
+  .aboutMe{
+    height: fit-content;
+  }
+  .aboutMe__right{
+    justify-content: center;
+    align-items: center;
+    margin:auto 0px ;
+  }
+  .aboutMe__backImg{
+    width: 300px;
+    height: 300px;
+  }
+  .aboutMe__officeImg{
+    width: 300px;
+  }
+  .aboutMe__floor{
+    width: 275px;
+    bottom: -10px;
+  }
+  .aboutMe__title{
+    @include BoldFont44;
+    text-align: left;
+  }
+  .aboutMe__description{
+    @include FontNormal15;
+  }
+  .aboutMe__left{
+    padding-left: 70px;
   }
 }
-@media (max-width: $LaptopWidth) {
-  .aboutMe {
-    .aboutMe__container {
-      justify-content: center;
-    }
-    .aboutMe__txt {
-      width: 80%;
-      text-align: center;
-      .aboutMe__intro {
-        text-align: center;
-      }
-      .aboutMe__langueges {
-        text-align: center;
-      }
-      .aboutMe__softSkills {
-        text-align: center;
-      }
-      .aboutMe__mySkills {
-        position: relative;
-      }
-    }
-    .aboutMe__mySkills {
-      margin: 20px auto;
-      &::after {
-        position: absolute;
-        content: "";
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: $SystemBlueColor;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -50px;
-        // border: 2px solid;
-        transition: 0.5s;
-      }
-      &::before {
-        position: absolute;
-        content: "";
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: $SystemBlueColor;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -50px;
-        // border: 2px solid;
-        transition: 0.5s;
-      }
-      // border: 1px solid $SystemBlue2Color;
-      &:hover {
-        background-color: $SystemBlue1Color;
-        &::after {
-          left: 0;
-          border: none;
-          background-color: $SystemBlue1Color;
-        }
-        &::before {
-          right: 0;
-          border: none;
-          background-color: $SystemBlue1Color;
-        }
-        // background-color: $SystemBlue1Color;
-      }
-    }
-    .aboutMe__img {
-      display: none;
-    }
+@media (max-width: $IpadWidth){
+  .aboutMe{
+    height: fit-content;
+    gap: 50px;
   }
-  .aboutMe__techSkills {
-    flex-direction: column;
-    gap: 10px;
+  .aboutMe__right{
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutMe__backImg{
+    width: 225px;
+    height: 225px;
+  }
+  .aboutMe__officeImg{
+    width: 200px;
+  }
+  .aboutMe__floor{
+    width: 275px;
+    bottom: -10px;
+  }
+  .aboutMe__title{
+    @include BoldFont44;
+    text-align: left;
+  }
+  .aboutMe__description{
+    @include FontNormal15;
   }
 }

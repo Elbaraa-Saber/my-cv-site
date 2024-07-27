@@ -17,15 +17,15 @@
 }
 .myProjects__head {
   padding-left: 120px;
-  .myProjects__title {
-    text-align: left;
-    @include BoldFont64;
-    color: $BrightSecondColor;
-    span {
-      color: $BrightMainColor;
-    }
-    margin: 0 0 16px 0;
+}
+.myProjects__title {
+  text-align: left;
+  @include BoldFont64;
+  color: $BrightSecondColor;
+  span {
+    color: $BrightMainColor;
   }
+  margin: 0 0 16px 0;
 }
 .myProject__filter {
   padding: 0px;
@@ -37,14 +37,14 @@
 }
 .myProject__choise {
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 10px 32px;
+  @include FontNormal18;
   width: fit-content;
   background: $DarkSecondColor;
   border-radius: 24px;
-  @include FontNormal18;
   color: $BrightSecondColor;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   &.myProject__choise-chicked {
@@ -62,13 +62,23 @@
   margin: auto;
 }
 
-@media (max-width: $BigMobile) {
-  .myProjects__boxes {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+@media (max-width: $LaptopWidth) {
+  .myProjects__title {
+    @include BoldFont44;
+  }
+  .myProject__choise {
+    @include FontNormal18;
   }
 }
-@media (max-width: $Mobile) {
-  .myProjects__boxes {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+@media (max-width: $IpadWidth) {
+  .myProjects__head{
+    padding: 0px;
   }
+  .myProjects__title{
+    text-align: center;
+  }
+  .myProject__filter{
+    justify-content: center;
+  }
+
 }

@@ -7,21 +7,31 @@ import Man from "../../Shared/Assets/Imgs/Group2346.png";
 import { FloorIcon } from "../../Shared/UI/Icons/Floor.tsx";
 import { DownArrow } from "../../Shared/UI/Icons/DownArrow.tsx";
 
-interface Props{
-  id: string
+interface Props {
+  id: string;
 }
-export const HomePage = ({id}: Props) => {
+export const HomePage = ({ id }: Props) => {
+  const handleScroll = () => {
+    const section = document.getElementById("aboutme");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <section className="homePage" id={id}>
       <div className="homePage__left">
-        <ArrowIcon className="homePage__arrowIcon"/>
+        <ArrowIcon className="homePage__arrowIcon" />
         <h1 className="homePage__work">
-          Frontend<br/><span>Developer</span>
+          Frontend
+          <br />
+          <span>Developer</span>
         </h1>
-        <div className="homePage__link">
-            <a href="mailto:baraax01@gmail.com" className="homePage__link">Нанять меня</a>
+        <div className="homePage__emailLink">
+          <a href="mailto:baraax01@gmail.com" className="homePage__link">
+            Нанять меня
+          </a>
         </div>
-        <DownArrow className="homePage__downArrow"/>
+        <DownArrow onClick={handleScroll} className="homePage__downArrow" />
       </div>
       <div className="homePage__right">
         <img

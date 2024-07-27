@@ -2,12 +2,14 @@ import React from "react";
 
 interface Props {
   className?: string;
+  onClick?: () => void;
 }
 
-export const DownArrow = ({className} : Props) => {
+export const DownArrow = ({ className, onClick }: Props) => {
   return (
     <svg
-        className={className}
+      className={className}
+      onClick={onClick}
       width="23"
       height="38"
       viewBox="0 0 23 38"

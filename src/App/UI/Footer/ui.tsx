@@ -18,19 +18,25 @@ import { UserIcon } from "../../../Shared/UI/Icons/UserIcon.tsx";
 import { PhoneIcon } from "../../../Shared/UI/Icons/PhoneIcon.tsx";
 
 export const Footer = () => {
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <footer className="footer">
       <div className="container footer__container">
         <div className="footer__sections">
-          <div className="footer__section">
+          <div className="footer__section" onClick={()=> handleScroll('home')}>
             <HomeIcon className="footer__homeIcon"/>
             <span >Home</span>
           </div>
-          <div className="footer__section">
+          <div className="footer__section" onClick={()=> handleScroll('aboutme')}>
             <UserIcon className='footer__userIcon'/>
             <span >About me</span>
           </div>
-          <div className="footer__section">
+          <div className="footer__section" onClick={()=> handleScroll('contact')}>
             <PhoneIcon className="footer__phoneIcon"/>
             <span >Contact</span>
           </div>

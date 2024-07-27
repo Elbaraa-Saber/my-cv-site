@@ -12,13 +12,9 @@
     flex-direction: column;
     background-color: $DarkMainColor;
     margin-top: 100px;
+    padding-bottom: 50px;
     gap: 30px;
   }
-}
-.footer__title {
-  @include RegularHeaderMediumBold2;
-  color: $SystemWhiteColor;
-  margin: 10px 0;
 }
 .footer__sections{
   display: flex;
@@ -26,6 +22,7 @@
   align-items: center;
   gap: 50px;
   .footer__section{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +45,6 @@
   gap: 20px;
   margin-bottom: 30px;
   .footer__box {
-    @include RegularParagraph2;
     display: flex;
     align-items: center;
     justify-content: center;

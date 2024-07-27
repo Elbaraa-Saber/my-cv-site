@@ -37,13 +37,9 @@
   @include LogoFont;
   margin: 0 auto;
   letter-spacing: -0.5px;
-  color: $SystemWhiteColor;
+  color: $BrightSecondColor;
 }
-.header__work {
-  margin: 0;
-  @include MainScriptNorm;
-  color: $SystemBlueColor;
-}
+
 
 .header__infoBox {
   position: relative;
@@ -62,78 +58,36 @@
       width: 100%;
     }
   }
-  .header__info {
-    @include FontNormal18;
-    color: $BrightSecondColor;
-    margin: 5px auto;
-    cursor: pointer;
-  }
+}
+.header__info {
+  @include FontNormal18;
+  color: $BrightSecondColor;
+  margin: 5px auto;
+  cursor: pointer;
 }
 
-@media (max-width: $TvWidth) {
-  .header {
-    &.header-hide {
-      .header__right {
-        top: 50px;
-        right: 70px;
-      }
-    }
-  }
-}
 @media (max-width: $LaptopWidth) {
-  .header {
-    &.header-hide {
-      background-color: transparent;
-      height: 100%;
-      width: 100%;
-      .header__right {
-        display: none;
-      }
-    }
+  .header__info {
+    @include FontNormal15;
+  }
+  .header__left{
+    margin-left: 70px;
+  }
+  .header__right{
+    margin-right: 70px;
   }
 }
 @media (max-width: $IpadWidth) {
-  .header {
-    &.header-hide {
-      height: 50vh;
-      .header__right {
-        display: none;
-      }
-      .header__left {
-        display: none;
-      }
-    }
-    .header__left {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      .header__name {
-        @include RegularHeaderMediumBold;
-      }
-      .header__work {
-        @include MainScriptOverSmall;
-      }
-    }
-    .header__right {
-      display: none;
-    }
+  .header__info {
+    @include FontNormal15;
   }
-}
-@media (max-width: $BigMobile) {
-  .header {
-    &.header-hide {
-      height: 0px;
-      .header__right {
-        display: none;
-      }
-    }
-    .header__left {
-      .header__name {
-        @include RegularHeaderMediumBold;
-      }
-      .header__work {
-        @include MainScriptOverSmall;
-      }
-    }
+  .header__left{
+    margin-left: 50px;
+  }
+  .header__right{
+    margin-left: 50px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }

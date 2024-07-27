@@ -6,10 +6,9 @@ import { SecondArrow } from "../../Shared/UI/Icons/SecondArrow.tsx";
 import { SendIcon } from "../../Shared/UI/Icons/SendIcon.tsx";
 
 interface Props {
-  id: string,
-
+  id: string;
 }
-export const ContactMe = ({id}: Props) => {
+export const ContactMe = ({ id }: Props) => {
   const form = useRef();
   const [formData, setFormData] = useState({
     name: "",
@@ -60,8 +59,9 @@ export const ContactMe = ({id}: Props) => {
         <form className="contactMe__right" onSubmit={handleSubmit}>
           <div className="contactMe__info">
             <div className="contactMe__name">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Your Name</label>
               <input
+                placeholder="Name"
                 type="text"
                 id="name"
                 name="name"
@@ -71,8 +71,9 @@ export const ContactMe = ({id}: Props) => {
               />
             </div>
             <div className="contactMe__email">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Your Email</label>
               <input
+                placeholder="email"
                 type="email"
                 id="email"
                 name="email"
@@ -83,8 +84,9 @@ export const ContactMe = ({id}: Props) => {
             </div>
           </div>
           <div className="contactMe__message">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Your Message</label>
             <textarea
+              placeholder="Message"
               id="message"
               name="message"
               value={formData.message}
@@ -97,9 +99,15 @@ export const ContactMe = ({id}: Props) => {
             <span>Send Message</span>
             <SendIcon />
           </button>
-          {status === "SUCCESS" && <p className="contactMe__successMessage">Your message was sent successfully!</p>}
+          {status === "SUCCESS" && (
+            <p className="contactMe__successMessage">
+              Your message was sent successfully!
+            </p>
+          )}
           {status === "ERROR" && (
-            <p className="contactMe__wrongMessage">Sorry, there was a problem sending your message.</p>
+            <p className="contactMe__wrongMessage">
+              Sorry, there was a problem sending your message.
+            </p>
           )}
         </form>
       </div>

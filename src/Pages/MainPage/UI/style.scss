@@ -9,7 +9,7 @@
 
 
 
-@media (min-width: $TvWidth){
+@media (min-width: $LaptopMaxWidth){
     .container{
         padding: 0px $PaddingBigContainer;
     }
@@ -24,13 +24,23 @@
         padding: 0px $PaddingMediumContainer;
     }
 }
-@media (max-width: $IpadWidth){
+@media (min-width: $TabletWidth){
     .container{
         padding: 0px $PaddingSmallContainer;
     }
 }
-@media (max-width: $BigMobile){
+@media (max-width: $MobileMediumWidth){
     .container{
         padding: 0px $PaddingXSmallContainer;
     }
 }
+// @media (max-width: $IpadWidth){
+//     .container{
+//         padding: 0px $PaddingSmallContainer;
+//     }
+// }
+// @media (max-width: $BigMobile){
+//     .container{
+//         padding: 0px $PaddingXSmallContainer;
+//     }
+// }

@@ -1,112 +1,172 @@
-@import '../../Shared/Style/GeneralStyle.scss';
+@import "../../Shared/Style/GeneralStyle.scss";
 
-.homePage{
-    width: 100%;
-    height: calc(100vh - 96px);
-    padding-top: 96px;
-    background-color: $DarkMainColor;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .homePage__left{
-        z-index: 5;
-        height: 100%;
-        width: 50%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: start;
-        flex-direction: column;
-        position: relative;
-        .homePage__work {
-            @include Header;
-            line-height: 96px;
-            width: fit-content;
-            color: $BrightSecondColor;
-            text-align: left;
-            margin: 110px 0px 0px 150px;
-            span{
-                color: $BrightMainColor;
-            }
-        }
-        .homePage__arrowIcon{
-            position: absolute;
-            left: 60px;
-            top: 50%;
-            transform: translateY(-50%);
-            // height: 500px;
-        }
-        .homePage__link{
-            // width: 100%;            
-            margin: 75px 0px 0px 90px;
-            text-align: left;
-            a{
-                padding: 10px 32px;
-                border-radius: 24px;
-                background-color: $BrightMainColor;
-                text-decoration: none;
-                color: $BrightSecondColor;
-            }
-        }
-        .homePage__downArrow{
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 30px;
-            background-color: $DarkSecondColor;
-            color: $BrightSecondColor;
-            // width: 96px;
-            // height: 96px;
-            padding: 15px;
-        }
-    }
-    .homePage__right{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        position: relative;
-        width: 50%;
-        .homPage__backgroundImg{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 425px;
-            height: 425px;
-        }
-        .homPage__manImg{
-            z-index: 100;
-        }
-        .homePage__floor{
-            position: absolute;
-            bottom: 60px;
-            z-index: 99;
-        }
-    }
+.homePage {
+  width: 100%;
+  height: calc(100vh - 96px);
+  padding-top: 96px;
+  background-color: $DarkMainColor;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.homePage__right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 50%;
+}
+.homPage__backgroundImg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 425px;
+  height: 425px;
+}
+.homPage__manImg {
+  z-index: 100;
+}
+.homePage__floor {
+  position: absolute;
+  bottom: 60px;
+  z-index: 99;
 }
 
-
-
-@media (max-width: $TvWidth) {
-    .changeImg {
-        margin-bottom: 120px;
-    }
+.homePage__left {
+  z-index: 5;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+  position: relative;
 }
+.homePage__work {
+  @include Header;
+  line-height: 96px;
+  width: fit-content;
+  color: $BrightSecondColor;
+  text-align: left;
+  margin: 110px 0px 0px 150px;
+  span {
+    color: $BrightMainColor;
+  }
+}
+.homePage__arrowIcon {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  // height: 500px;
+}
+.homePage__emailLink {
+  width: 100%;
+  margin: 75px 0px 0px 0px;
+  text-align: center;
+  a {
+    padding: 10px 32px;
+    border-radius: 24px;
+    background-color: $BrightMainColor;
+    text-decoration: none;
+    color: $BrightSecondColor;
+  }
+}
+.homePage__downArrow {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  background-color: $DarkSecondColor;
+  color: $BrightSecondColor;
+  padding: 15px;
+}
+
+@media (max-width: $LaptopMaxWidth) {
+  .homePage__work{
+    @include BoldFont64;
+    margin: 80px 0px 0px 150px;
+  }
+  .homePage__downArrow{
+    padding: 10px;
+    height: 25px;
+    bottom: 15px;
+  }
+  .homePage__arrowIcon {
+    left: 60px;
+    top: 60%;
+    transform: translateY(-50%);
+    height: 200px;
+  }
+  .homePage__emailLink{
+    margin: 30px 0px 0px 0px;
+  }
+}
+
 @media (max-width: $LaptopWidth) {
-    .changeImg {
-        margin-bottom: 80px;
-    }
-    .changeImg__question{
-        @include MainScriptBig;
-    }
+  .homPage__manImg{
+    width: 250px;
+
+  }
+  .homPage__backgroundImg{
+    width: 300px;
+    height: 300px;
+  }
+  .homePage__work{
+    @include BoldFont44;
+    line-height: 50px;
+
+  }
+  .homePage__downArrow{
+    padding: 10px;
+    height: 25px;
+    bottom: 15px;
+  }
+  .homePage__arrowIcon {
+    left: 60px;
+    top: 60%;
+    transform: translateY(-50%);
+    height: 200px;
+  }
+  .homePage__emailLink{
+    margin: 30px 0px 0px 0px;
+  }
 }
+
 @media (max-width: $IpadWidth) {
-    .changeImg__question{
-        @include MainScriptNorm;
-    }
-}
-@media (max-width: $BigMobile) {
-    .changeImg__question{
-        top: 7%;
-        right: 20px;
-    }
+  .homPage__manImg{
+    width: 200px;
+  }
+  .homPage__backgroundImg{
+    width: 225px;
+    height: 225px;
+  }
+  .homePage__work{
+    @include BoldFont44;
+    line-height: 50px;
+    margin: 50px 0px 0px 100px;
+  }
+  .homePage__downArrow{
+    padding: 7px;
+    height: 20px;
+    bottom: 20px;
+  }
+  .homePage__arrowIcon {
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 140px;
+  }
+  .homePage__emailLink{
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+  a {
+    padding: 5px 15px;
+    border-radius: 24px;
+    background-color: $BrightMainColor;
+    color: $BrightSecondColor;
+  }
+  }
 }

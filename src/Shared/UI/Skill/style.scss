@@ -21,23 +21,32 @@
   width: 100%;
   background-color: white;
   border-radius: 15px;
-  .skill__percentShow {
-    background-color: $BrightMainColor;
-    display: block;
-    height: 8px;
-    border-radius: 15px;
-    position: relative;
-    &::after {
-      content: "";
-      width: 15px;
-      height: 15px;
-      background-color: $BrightSecondColor;
-      border: 1px solid $BrightMainColor;
-      position: absolute;
-      right: 0px;
-      border-radius: 50%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+}
+.skill__percentShow {
+  background-color: $BrightMainColor;
+  display: block;
+  height: 8px;
+  border-radius: 15px;
+  position: relative;
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: $BrightSecondColor;
+    border: 1px solid $BrightMainColor;
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: $LaptopWidth){
+  .skill__label{
+    @include FontNormal15;
+  }
+  .skill__container{
+    @include FontNormal15;
   }
 }
