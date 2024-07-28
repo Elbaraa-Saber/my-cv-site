@@ -22,7 +22,7 @@ export const AboutMe = ({ className, skills, id , additionalSkills }: Props) => 
             About <span>me</span>
           </h2>
           <p className="aboutMe__description">
-            Меня зовут Салем Эльбараа, веб-разработчик. обучаюсь по специальности: "Программная
+            Меня зовут Салем Эльбараа. Я веб-разработчик, обучаюсь по специальности "Программная
             инженерия" в НИ ТГУ.
           </p>
         </div>
