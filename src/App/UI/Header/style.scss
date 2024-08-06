@@ -82,12 +82,13 @@
     @include FontNormal15;
   }
   .header__left{
-    margin-left: 50px;
+    margin: auto;
   }
   .header__right{
-    margin-left: 50px;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+    // margin-left: 50px;
+    // gap: 30px;
+    // justify-content: center;
+    // align-items: center;
+    display: none;
   }
 }

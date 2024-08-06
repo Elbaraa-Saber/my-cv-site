@@ -13,7 +13,7 @@ interface Props {
   additionalSkills?: { id: string; name: string }[];
   id: string;
 }
-export const AboutMe = ({ className, skills, id , additionalSkills }: Props) => {
+export const AboutMe = ({ className, skills, id, additionalSkills }: Props) => {
   return (
     <section className="aboutMe" id={id}>
       <div className="aboutMe__left">
@@ -22,8 +22,10 @@ export const AboutMe = ({ className, skills, id , additionalSkills }: Props) => 
             About <span>me</span>
           </h2>
           <p className="aboutMe__description">
-            Меня зовут Салем Эльбараа. Я веб-разработчик, обучаюсь по специальности "Программная
-            инженерия" в НИ ТГУ.
+            My name is Salem Elbaraa. I am a web developer, studying Software
+            Engineering at TSU.
+            {/* Меня зовут Салем Эльбараа. Я веб-разработчик, обучаюсь по специальности "Программная
+            инженерия" в НИ ТГУ. */}
           </p>
         </div>
         <div className="abouMe__skills">

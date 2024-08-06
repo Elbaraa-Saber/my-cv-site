@@ -63,80 +63,95 @@
   bottom: 16%;
   z-index: 99;
 }
-.aboutMe__zIcons{
+.aboutMe__zIcons {
   position: absolute;
   left: 40%;
   top: 30%;
   transform: translate(-50%, -50%);
-  .aboutMe__zTop{
+  .aboutMe__zTop {
     position: absolute;
     left: 30px;
     top: -50px;
   }
-  .aboutMe__zBetween{
+  .aboutMe__zBetween {
     position: absolute;
     left: 15px;
     top: -25px;
-
   }
 }
 
-@media (max-width: $LaptopWidth){
-  .aboutMe{
+@media (max-width: $LaptopWidth) {
+  .aboutMe {
     height: fit-content;
   }
-  .aboutMe__right{
+  .aboutMe__right {
     justify-content: center;
     align-items: center;
-    margin:auto 0px ;
+    margin: auto 0px;
   }
-  .aboutMe__backImg{
+  .aboutMe__backImg {
     width: 300px;
     height: 300px;
   }
-  .aboutMe__officeImg{
+  .aboutMe__officeImg {
     width: 300px;
   }
-  .aboutMe__floor{
+  .aboutMe__floor {
     width: 275px;
     bottom: -10px;
   }
-  .aboutMe__title{
+  .aboutMe__title {
     @include BoldFont44;
     text-align: left;
   }
-  .aboutMe__description{
+  .aboutMe__description {
     @include FontNormal15;
   }
-  .aboutMe__left{
+  .aboutMe__left {
     padding-left: 70px;
   }
 }
-@media (max-width: $IpadWidth){
-  .aboutMe{
+@media (max-width: $IpadWidth) {
+  .aboutMe {
     height: fit-content;
-    gap: 50px;
-  }
-  .aboutMe__right{
+    gap: 100px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .aboutMe__backImg{
+  .aboutMe__right {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+  }
+  .aboutMe__left {
+    padding-left: 0px;
+    width: 100%;
+  }
+  .aboutMe__backImg {
     width: 225px;
     height: 225px;
   }
-  .aboutMe__officeImg{
+  .aboutMe__officeImg {
     width: 200px;
   }
-  .aboutMe__floor{
+  .aboutMe__floor {
     width: 275px;
     bottom: -10px;
   }
-  .aboutMe__title{
+  .aboutMe__title {
     @include BoldFont44;
-    text-align: left;
+    text-align: center;
   }
-  .aboutMe__description{
+  .aboutMe__description {
     @include FontNormal15;
+    text-align: center;
+  }
+  .abouMe__skills {
+    padding: 0px 30px;
+  }
+  .aboutMe__additionalSills {
+    padding: 0px 30px;
   }
 }

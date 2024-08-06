@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import photoIntenarship from "../../Shared/Assets/Imgs/intenarship.jpg";
-import { Title } from "../../Shared/index.ts";
+// import { Title } from "../../Shared/index.ts";
 import { MusicIcon } from "../../Shared/UI/Icons/MusicIcon.tsx";
 import { LampIcon } from "../../Shared/UI/Icons/LampIcon.tsx";
 import { SecondArrow } from "../../Shared/UI/Icons/SecondArrow.tsx";
@@ -33,13 +33,17 @@ export const Experience = ({ id }: Props) => {
                 My <span>Experience</span>
               </h2>
               <p className="experience__description">
-                У меня полтора года опыта (обучения и ведения проектов) во
-                фронтенд-разработке.
+                I have a year and a half of experience (training and project
+                management) in front-end development.
+                {/* У меня полтора года опыта (обучения и ведения проектов) во
+                фронтенд-разработке. */}
               </p>
               <p className="experience__description">
-                Несколько месяцев назад проходил стажировку в Академии
+                A few months ago, I did an internship at the Abdrashitov
+                Academy, where I improved my programming and teamwork skills.
+                {/* Несколько месяцев назад проходил стажировку в Академии
                 Абдрашитова, где совершенствовал свои навыки программирования и
-                работы в команде.
+                работы в команде. */}
               </p>
             </p>
             {/* <p className="experience__secondTxt">

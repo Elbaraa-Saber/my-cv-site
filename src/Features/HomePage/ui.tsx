@@ -28,7 +28,7 @@ export const HomePage = ({ id }: Props) => {
         </h1>
         <div className="homePage__emailLink">
           <a href="mailto:baraax01@gmail.com" className="homePage__link">
-            Нанять меня
+            Hire me
           </a>
         </div>
         <DownArrow onClick={handleScroll} className="homePage__downArrow" />

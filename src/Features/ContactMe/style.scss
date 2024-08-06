@@ -131,6 +131,11 @@
   }
 }
 @media (max-width: $LaptopWidth) {
+  .contactMe__container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .contactMe__title {
     line-height: 50px;
   }
@@ -144,5 +149,30 @@
   }
   .contactMe__container {
     gap: 30px;
+  }
+  .contactMe__left{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contactMe__right{
+    width: 100%;
+  }
+  .contactMe__info{
+    flex-direction: column;
+    div{
+      width: 75%;
+    }
+  }
+  .contactMe__message{
+    width: 75%;
+    margin: auto;
+  }
+  .contactMe__submitBtn{
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .contactMe__container{
+    padding: 0px 90px;
   }
 }

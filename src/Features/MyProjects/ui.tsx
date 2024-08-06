@@ -22,7 +22,7 @@ const ProjectsArr = [
     intenarship: true,
     withTeam: false,
     label: "Eatly",
-    explain: "Сайт для заказа еды (React JS).",
+    explain: "Website for ordering food",
     link: "https://elbaraa-saber.github.io/eatly/",
     linkCode: "https://github.com/Elbaraa-Saber/eatly",
     img: Eatly,
@@ -32,8 +32,8 @@ const ProjectsArr = [
     by: "ReactTS",
     intenarship: true,
     withTeam: false,
-    label: "Парсер форм",
-    explain: "Динамический парсер форм (React TS).",
+    label: "Dynamic Form",
+    explain: "Dynamic Form Parser",
     link: "https://elbaraa-saber.github.io/daynamicForm",
     linkCode: "https://github.com/Elbaraa-Saber/daynamicForm",
     img: Form,
@@ -43,8 +43,8 @@ const ProjectsArr = [
     by: "ReactTS",
     intenarship: true,
     withTeam: true,
-    label: "Канбан доска",
-    explain: "Канбан доска  (React TS).",
+    label: "Kanban board",
+    explain: "Tasks Manager",
     linkCode: "https://github.com/DaryaVin/AA_HW3",
     img: List,
   },
@@ -52,10 +52,10 @@ const ProjectsArr = [
     id: 4,
     by: "ReactTS",
     intenarship: true,
-    label: "Сервис Онлайн образования",
+    label: "Education Service",
     linkCode: "https://github.com/pmaxaa/education-service",
     withTeam: true,
-    explain: "Сервис Онлайн образования  (React TS).",
+    explain: "Online Education Service",
     img: studySite,
   },
   {
@@ -135,6 +135,14 @@ export const MyProjects = ({id}: Props) => {
           </li>
           <li
             className={`myProject__choise ${
+              filter === "JS" && "myProject__choise-chicked"
+            }`}
+            onClick={() => setFilter("JS")}
+          >
+            JS
+          </li>
+          <li
+            className={`myProject__choise ${
               filter === "React" && "myProject__choise-chicked"
             }`}
             onClick={() => setFilter("React")}
@@ -148,14 +156,6 @@ export const MyProjects = ({id}: Props) => {
             onClick={() => setFilter("ReactTS")}
           >
             React & TS
-          </li>
-          <li
-            className={`myProject__choise ${
-              filter === "JS" && "myProject__choise-chicked"
-            }`}
-            onClick={() => setFilter("JS")}
-          >
-            JS
           </li>
           <li
             className={`myProject__choise ${

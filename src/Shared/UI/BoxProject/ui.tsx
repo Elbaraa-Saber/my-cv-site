@@ -29,8 +29,8 @@ export const BoxProject = ({
         <h3 className="boxProject__title">{explain}</h3>
         <div className="boxProject__creator">
           {intenarship && (withTeam
-            ? "Сделано командой"
-            : "Сделано мной на стажировке")}
+            ? "Made by the team"
+            : "Made by me during the internship")}
         </div>
       </div>
       <div className="boxProject__img">
@@ -39,12 +39,12 @@ export const BoxProject = ({
       <div className="">
         {link &&
           <a className="boxProject__link" href={link}>
-            Нажмите, чтобы увидеть {label ? label : "Сайт"}
+            See the: {label ? label : "Website"}
           </a>
         }
         { linkCode && (
           <a className={"boxProject__linkCode"} href={linkCode}>
-            Click to see code on Github
+            See the code on GitHub
           </a>
         )}
       </div>

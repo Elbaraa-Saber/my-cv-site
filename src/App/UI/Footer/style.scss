@@ -103,3 +103,14 @@ a.footer__box {
     }
   }
 }
+
+@media (max-width: $BigMobile) {
+  .footer__sections {
+    flex-direction: column;
+  }
+  .footer__egyptIcons .icon {
+    width: 30px;
+    height: 30px;
+    // color: #EEEEEE;
+}
+}

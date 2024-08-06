@@ -17,7 +17,7 @@ export const Header = ({ className, pages }: Props) => {
     <header className={`header`}>
       <div className="header__border"></div>
       <div className="header__left">
-        <div className="header__name">ЭльБараа</div>
+        <div className="header__name">Elbaraa</div>
       </div>
       <div className="header__right">
       {pages.map((page) => (
