@@ -1,16 +1,52 @@
-@import '../../Style/GeneralStyle.scss';
+@import "../../Style/GeneralStyle.scss";
 
-.skill{
-    background-color: $SystemBlue6Color;
-    color: $SystemWhiteColor;
-    padding: 7px 10px;
-    border-radius: 10px;
-    @include RegularParagraph2;
-    transition: 0.5s;
-    &:hover {
-        transform: scale(1.2);
-        background-color: $SystemWhiteColor;
-        color: $SystemBlue6Color;
-        box-shadow: 2px 2px 5px 0px $SystemBlue5Color;
-    }
+.skill__container {
+  background-color: $DarkSecondColor;
+  color: $BrightSecondColor;
+  padding: 7px 15px;
+  border-radius: 10px;
+  @include FontNormal18;
+  transition: 0.5s;
+}
+
+.skill__label {
+    @include FontNormal18;
+    color: $BrightSecondColor;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.skill__percentSkill {
+  // margin-bottom: 15px;
+  height: 8px;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+}
+.skill__percentShow {
+  background-color: $BrightMainColor;
+  display: block;
+  height: 8px;
+  border-radius: 15px;
+  position: relative;
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: $BrightSecondColor;
+    border: 1px solid $BrightMainColor;
+    position: absolute;
+    right: 0px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: $LaptopWidth){
+  .skill__label{
+    @include FontNormal15;
+  }
+  .skill__container{
+    @include FontNormal15;
+  }
 }

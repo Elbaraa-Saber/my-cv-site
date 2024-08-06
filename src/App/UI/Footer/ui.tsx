@@ -13,49 +13,59 @@ import { GiEgyptianTemple } from "react-icons/gi";
 import { GiEgyptianUrns } from "react-icons/gi";
 import { GiEgyptianWalk } from "react-icons/gi";
 import { FaTelegramPlane } from "react-icons/fa";
+import { HomeIcon } from "../../../Shared/UI/Icons/HomeIcon.tsx";
+import { UserIcon } from "../../../Shared/UI/Icons/UserIcon.tsx";
+import { PhoneIcon } from "../../../Shared/UI/Icons/PhoneIcon.tsx";
 
-interface Props {
-  className?: string ;
-  selectedLang: "Russian" | "English";
-}
-export const Footer = ({className, selectedLang}: Props) => {
+export const Footer = () => {
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <footer className="footer">
       <div className="container footer__container">
-        <div className="footer__contact">
-          <div className="footer__title">{selectedLang === 'Russian'? 'Свяжитесь со мной' : 'Contact me'}</div>
+        <div className="footer__sections">
+          <div className="footer__section" onClick={()=> handleScroll('home')}>
+            <HomeIcon className="footer__homeIcon"/>
+            <span >Home</span>
+          </div>
+          <div className="footer__section" onClick={()=> handleScroll('aboutme')}>
+            <UserIcon className='footer__userIcon'/>
+            <span >About me</span>
+          </div>
+          <div className="footer__section" onClick={()=> handleScroll('contact')}>
+            <PhoneIcon className="footer__phoneIcon"/>
+            <span >Contact</span>
+          </div>
+        </div>
           <div className="footer__contactBoxes">
             <a href="mailto:baraasaber22@gmail.com" className="footer__box">
-              baraax01@gmail.com
               <MdOutlineEmail />
             </a>
             <a href="mailto:elbarsalem@mail.ru" className="footer__box">
-              elbarsalem@mail.ru
               <MdAlternateEmail />
             </a>
-            <span className="footer__box">
-              +7 996 692 5268
+            <a className="footer__box" href="tel:+7 996 692 5268">
               <CiMobile1 />
-            </span>
+            </a>
             <a href="https://t.me/baraasalem2" className="footer__box">
-              Telegram <FaTelegramPlane />
+              <FaTelegramPlane />
             </a>
             <a href="https://vk.com/id615489202" className="footer__box">
               VK
             </a>
           </div>
-        </div>
-        <div className="footer__right">
-          {/* <div className="footer__egypt">ЕГИПЕТ<GiEgypt className="footer__egyptianFlag"/></div> */}
-          <div className="footer__egyptIcons">
-            <GiEgyptianWalk className="icon" />
-            <GiEgyptianSphinx className="icon" />
-            <GiEgyptianPyramids className="icon" />
-            <GiEgyptianTemple className="icon" />
-            <GiEgyptianProfile className="icon" />
-            <GiEgyptianUrns className="icon" />
-            <GiEgyptianBird className="icon" />
-          </div>
+        <div className="footer__egyptIcons">
+          <GiEgyptianWalk className="icon" />
+          <GiEgyptianSphinx className="icon" />
+          <GiEgyptianPyramids className="icon" />
+          <GiEgyptianTemple className="icon" />
+          <GiEgyptianProfile className="icon" />
+          <GiEgyptianUrns className="icon" />
+          <GiEgyptianBird className="icon" />
         </div>
       </div>
     </footer>

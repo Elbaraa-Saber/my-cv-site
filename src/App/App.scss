@@ -1,10 +1,23 @@
+@import '../Shared/Style/GeneralStyle.scss';
 .App {
   text-align: center;
+  position: relative;
+  background-color: $DarkMainColor;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.App__border{
+  position: absolute;
+  width: 0px;
+  left: 25%;
+  top: 0;
+  height: 100%;
+  border-left: 1px solid rgba(238, 238, 238, 0.1);
+  z-index: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {

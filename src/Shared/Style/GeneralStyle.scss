@@ -1,21 +1,104 @@
-$SystemWhiteColor: #ffffff;
-$SystemWhiteDarkColor: #ffffff0d;
-$SystemBlue1Color: #5dd3fd;
-$SystemBlueColor: #5cbcdf;
-$SystemBlue2Color: #57b4d5;
-$SystemBlue3Color: #4a97b3;
-$SystemBlue4Color: #3c7a91;
-$SystemBlue5Color: #2e5e6f;
-$SystemBlue6Color: #20414d;
-
-$SystemDarkColor: #2a2a2a;
+// NEW COLORS STYLE 
+$DarkMainColor: #222831;
+$DarkSecondColor: #393E46;
+$BrightMainColor: #00ADB5;
+$BrightSecondColor: #EEEEEE;
+$BorderColor: rgb(238 238 238 / 10%);
 
 
-$PaddingBigContainer: 150px;
-$PaddingContainer: 120px;
-$PaddingMediumContainer: 90px;
-$PaddingSmallContainer: 70px;
-$PaddingXSmallContainer: 0px;
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('./Assest/Font/Oswald/Oswald-VariableFont_wght.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Assest/Font/Poppins/Poppins-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Assest/Font/Poppins/Poppins-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@mixin Header {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 96px;
+  font-weight: bold;
+}
+
+@mixin BoldFont64{
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 64px;
+  font-weight: bold;
+}
+@mixin BoldFont44{
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+
+@mixin FontNormal18 {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin FontNormal25 {
+  font-family: 'Poppins';
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin FontNormal15 {
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin FontNormal30 {
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin LogoFont {
+  font-family: 'oswald';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin LogoFontIpad {
+  font-family: 'oswald';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+$LaptopMaxWidth: 1200px;
+$LaptopWidth: 991px;
+
+$IpadMaxWidth: 991px;
+$IpadWidth: 768px;
+
+$TabletMaxWidth: 767px;
+$TabletMediumWidth: 700px;
+$TabletWidth: 600px;
+
+$MobileMediumWidth: 500px;
+$MobileMinWidth: 400px;
+
+
+
 
 $TvWidth: 1200px;
 $LaptopWidth: 991px;
@@ -23,256 +106,11 @@ $IpadWidth: 776px;
 $BigMobile: 500px;
 $Mobile: 400px;
 
-@font-face {
-  font-family: "NanumBrushScript";
-  src: url("./Assest/Font/Nanum_Brush_Script/NanumBrushScript-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-Regular.ttf");
-  font-weight: bolder;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-BoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-BoldItalic.ttf");
-  font-weight: bolder;
-  font-style: italic;
-}
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-Italic.ttf");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-Italic.ttf");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "PTSerif";
-  src: url("./Assest/Font/PTSerif/PTSerif-Italic.ttf");
-  font-weight: bold;
-  font-style: italic;
-}
 
 
 
-@font-face {
-  font-family: "Robot";
-  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Robot";
-  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Regular.ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Robot";
-  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Medium.ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Robot";
-  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-SemiBold.ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Robot";
-  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Robot";
-  src: url("./Assest/Font/Robot/Roboto_Condensed/static/RobotoCondensed-ExtraBold.ttf");
-  font-weight: bolder;
-  font-style: normal;
-}
-
-// headers
-
-@mixin RegularHeaderBold {
-  font-family: "Robot";
-  font-size: 17px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularMainFont4 {
-  font-family: "Robot";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-}
-@mixin RegularMainFont1 {
-  font-family: "Robot";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularMainFont1 {
-  font-family: "Robot";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularMainFont2 {
-  font-family: "Robot";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularHeaderBold25 {
-  font-family: "Robot";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularHeaderBold25400 {
-  font-family: "Robot";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 500;
-}
-@mixin RegularHeaderMediumBold {
-  font-family: "Robot";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularMainFont3 {
-  font-family: "Robot";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularHeaderMedium600 {
-  font-family: "Robot";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-}
-@mixin RegularHeaderMediumBold2 {
-  font-family: "Robot";
-  font-size: 35px;
-  font-style: normal;
-  font-weight: bold;
-}
-@mixin RegularHeaderBolder {
-  font-family: "Robot";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: bolder;
-}
-@mixin RegularHeader40500 {
-  font-family: "Robot";
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 500;
-}
-@mixin RegularHeaderBigBold {
-  font-family: "Robot";
-  font-size: 50px;
-  font-style: normal;
-  font-weight: bold;
-}
-
-
-
-// regular
-
-@mixin RegularParagraph {
-  font-family: "PTSerif";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-}
-@mixin RegularParagraph2 {
-  font-family: "PTSerif";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-}
-@mixin RegularParagraph3 {
-  font-family: "PTSerif";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-}
-@mixin RegularParagraphBold {
-  font-family: "PTSerif";
-  font-size: 30px;
-  font-style: italic;
-  font-weight: bold;
-}
-// not normal
-
-@mixin MainScriptOverBig {
-  font-family: "NanumBrushScript";
-  font-size: 100px;
-  font-weight: 400;
-  line-height: 40.57px;
-  text-align: center;
-}
-@mixin MainScriptBig {
-  font-family: "NanumBrushScript";
-  font-size: 70px;
-  font-weight: 400;
-  line-height: 40.57px;
-  text-align: center;
-}
-@mixin MainScriptNorm {
-  font-family: "NanumBrushScript";
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 40.57px;
-  text-align: center;
-}
-@mixin MainScriptSmall {
-  font-family: "NanumBrushScript";
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 40.57px;
-  text-align: center;
-}
-@mixin MainScriptOverSmall {
-  font-family: "NanumBrushScript";
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 40.57px;
-  text-align: center;
-}
+$PaddingBigContainer: 150px;
+$PaddingContainer: 120px;
+$PaddingMediumContainer: 90px;
+$PaddingSmallContainer: 70px;
+$PaddingXSmallContainer: 0px;

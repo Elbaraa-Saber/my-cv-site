@@ -1,52 +1,60 @@
 import React from "react";
 import "./style.scss";
-import ImgMain from "../../Shared/Assets/Imgs/main.jpg";
-import { Img, Skill } from "../../Shared/index.ts";
+import { Skill } from "../../Shared/index.ts";
 
+import OfficeImg from "../../Shared/Assets/Imgs/Group62.png";
+import Background from "../../Shared/Assets/Imgs/doodleItems.jpg";
+import { FloorIcon } from "../../Shared/UI/Icons/Floor.tsx";
+import { SleepZIcon } from "../../Shared/UI/Icons/SleepZIcon.tsx";
+
+interface Props {
+  className?: string;
+  skills: { name: string; id: string; Percentage: string }[];
+  additionalSkills?: { id: string; name: string }[];
+  id: string;
+}
 interface Props {
   className?: string;
   selectedLang: "English" | "Russian";
 }
-export const AboutMe = ({ className, selectedLang }: Props) => {
+export const AboutMe = ({ className, skills, id, additionalSkills }: Props{ className, selectedLang }: Props) => {
   return (
-    <section className="aboutMe">
-      <div className="container aboutMe__container">
-        <Img className="aboutMe__img" imgSrc={ImgMain} imgAlt="main" />
-        <div className="aboutMe__txt">
-          <div className="aboutMe__headText">
-            <h1 className="aboutMe__name">
-              {selectedLang === "Russian" ? "Салем ЭльБараа" : "Elbaraa Salem"}
-            </h1>
-            <p className="aboutMe__work">Front end developer</p>
-          </div>
-          <p className="aboutMe__intro">
-            {selectedLang === "Russian"
-              ? 'Я студент из Египта, проживающий с 2021 года в России. Осваиваю русский язык, обучаюсь по специальности: "Программная инженерия" в НИ ТГУ.'
-              : "I am an Egyptian student in Russia, studying software engineering at Tomsk State University."}
-          </p>
-          <p className="aboutMe__langueges">
-            {selectedLang === "Russian"
-              ? "Свободно владею арабским, русским и английским языками."
-              : "I can speak Arabic, Russian and English."}
-          </p>
-          <p className="aboutMe__softSkills">
-            {selectedLang === "Russian"
-              ? "Я имею отличные коммуникативные навыки, я хорошо взаимодействую в команде и предпочитаю работать в коллективе, а не в одиночку."
-              : "I have excellent communication skills, I interact well in a team and prefer to work in a team rather than alone."}
-          </p>
-          <h2 className="aboutMe__mySkills">{ selectedLang === 'Russian' ? 'Мои навыки' : 'My skills'}</h2>
-          <p className="aboutMe__techSkills">
-            <Skill skill="TypeScript" />
-            <Skill skill="JavaScript" />
-            <Skill skill="HTML" />
-            <Skill skill="Redux" />
-            <Skill skill="React" />
-            <Skill skill="SCSS" />
-            <Skill skill="BEM" />
-            <Skill skill="API" />
-            <Skill skill="CSS" />
+    <section className="aboutMe" id={id}>
+      <div className="aboutMe__left">
+        <div className="aboutMe__header">
+          <h2 className="aboutMe__title">
+            About <span>me</span>
+          </h2>
+          <p className="aboutMe__description">
+            My name is Salem Elbaraa. I am a web developer, studying Software
+            Engineering at TSU.
+            {/* Меня зовут Салем Эльбараа. Я веб-разработчик, обучаюсь по специальности "Программная
+            инженерия" в НИ ТГУ. */}
           </p>
         </div>
+        <div className="abouMe__skills">
+          {skills
+            ? skills.map((skill) => (
+                <Skill key={skill.id} withPercentage={true} skill={skill} />
+              ))
+            : "Error"}
+        </div>
+        <div className="aboutMe__additionalSills">
+          {additionalSkills &&
+            additionalSkills.map((skill) => (
+              <Skill key={skill.id} withPercentage={false} skill={skill} />
+            ))}
+        </div>
+      </div>
+      <div className="aboutMe__right">
+        <div className="aboutMe__zIcons">
+          <SleepZIcon className="aboutMe__zTop" />
+          <SleepZIcon className="aboutMe__zBetween" />
+          <SleepZIcon className="aboutMe__zUnder" />
+        </div>
+        <img src={Background} alt="background" className="aboutMe__backImg" />
+        <img src={OfficeImg} alt="office" className="aboutMe__officeImg" />
+        <FloorIcon className="aboutMe__floor" />
       </div>
     </section>
   );

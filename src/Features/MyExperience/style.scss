@@ -1,114 +1,121 @@
-@import '../../Shared/Style/GeneralStyle.scss';
+@import "../../Shared/Style/GeneralStyle.scss";
 
-.experience{
-    margin-top: 80px;
-    height: fit-content;
+.experience {
+  padding: 100px 0px;
+  height: fit-content;
+  background-color: $DarkMainColor;
+  border-bottom: 1px solid $BorderColor;
 }
-.experience__content{
-    height: fit-content;
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+.experience__content {
+  height: fit-content;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.experience__company {
+  // background-color: $SystemWhiteColor;
+  width: 40%;
+  border-radius: 40px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+.experience__title {
+  margin: 0;
+  @include BoldFont64;
+  color: $BrightSecondColor;
+  span {
+    color: $BrightMainColor;
+  }
+}
+.experience__companyName {
+  @include LogoFont;
+  margin-bottom: 20px;
+  color: $DarkMainColor;
+}
+.experience__team {
+  // margin-top: 20px;
+  @include FontNormal25;
+  color: $BrightMainColor;
+}
+.experience__img {
+  width: 90%;
+  border-radius: 20px;
+}
+.experience__txt {
+  flex: 1;
+  text-align: left;
+  color: $BrightSecondColor;
+  @include FontNormal25;
+  margin-right: 20px;
+  position: relative;
+}
+.experience__firstTxt {
+  position: relative;
+}
+.experience__musicIcon {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+.experience__lampIcon {
+  position: absolute;
+  bottom: -100px;
+  right: 20px;
+}
+.experience__arrowIcon {
+  position: absolute;
+  top: -130px;
+  left: 0px;
+  transform: rotate(160deg);
+}
+
+@media (max-width: $LaptopMaxWidth) {
+  .experience__arrowIcon {
+    top: -130px;
+    left: 0px;
+    transform: rotate(160deg);
+  }
+}
+@media (max-width: $LaptopWidth) {
+  .experience__arrowIcon {
+    top: -130px;
+    left: 0px;
+    transform: rotate(160deg);
+  }
+  .experience__title {
+    @include BoldFont44;
+  }
+  .experience__description {
+    @include FontNormal18;
+  }
+}
+@media (max-width: $IpadWidth) {
+  .experience__arrowIcon {
+    height: 120px;
+  }
+  .experience__container {
+    padding: 0;
+  }
+  .experience__content {
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
-}
-.experience__company{
-    background-color: $SystemDarkColor;
-    width: 600px;
-    border-radius: 100px;
-    padding: 40px 30px;
+  }
+  .experience__firstTxt {
     text-align: center;
-}
-.experience__companyName{
-    @include RegularHeaderMediumBold2;
-    margin-bottom: 20px;
-    color: $SystemWhiteColor;
-}
-.experience__team{
-    margin-top: 20px;
-    @include RegularParagraphBold;
-    color: $SystemBlue1Color;
-}
-.experience__img{
-    width: 500px;
-    border-radius: 50px 50px 50px 50px;
-}
-.experience__txt{
-    width: 40%;
-    text-align: left;
-    color: $SystemBlue6Color;
-    @include RegularParagraph3;
-    margin-right: 20px;
+  }
+  .experience__description {
+    padding: 0 20px;
+  }
 }
 
-@media (max-width: $TvWidth){
-    .experience__content{
-        flex-direction: column;
-    }
-}
-@media (max-width: $LaptopWidth){
-    .experience__company{
-        border-radius: 100px;
-        padding: 30px 15px 30px 15px;
-        text-align: center;
-        .experience__companyName{
-            margin: 0 auto 10px;
-        }
-        .experience__team{
-            margin: 10px auto 0;
-        }
-    }
-    .experience__img {
-        border-radius: 50px;
-    }
-    .experience__txt{
-        width: 80%;
-        text-align: center;
-    }
-}
-@media (max-width: $IpadWidth){
-    .experience__company{
-        width: 400px;
-        border-radius: 70px;
-    }
-    .experience__img {
-        width: 300px;
-        border-radius: 50px;
-        @include RegularParagraph2;
-        border-radius: 40px
-    }
-    .experience__companyName{
-        @include RegularMainFont2;
-    }
-    .experience__team{
-        @include RegularParagraph3;
-    }
-}
-@media (max-width: $BigMobile){
-    .experience__company{
-        width: 340px;
-        border-radius: 30px;
-        padding: 20px;
-    }
-    .experience__img {
-        width: 300px;
-        border-radius: 15px;
-    }
-    .experience__companyName{
-        @include RegularMainFont1;
-    }
-    .experience__team{
-        @include RegularParagraph2;
-    }
-}
-
-@media (max-width: $Mobile) {
-    .experience__company{
-        width: 300px;
-    }
-    .experience__img{
-        width: 270px;
-    }
+@media (min-width: 768px) {
+  .experience__container {
+    padding: 0px 90px;
+  }
 }

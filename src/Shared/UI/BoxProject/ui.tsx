@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./style.scss";
 import { NavLink } from "react-router-dom";
 
@@ -10,7 +10,7 @@ interface Props {
   className?: string;
   linkCode: string;
   intenarship?: boolean;
-  selectedLang: "Russian" | "English";
+  img?: string;
 }
 
 export const BoxProject = ({
@@ -21,7 +21,7 @@ export const BoxProject = ({
   className,
   linkCode,
   intenarship,
-  selectedLang,
+  img
 }: Props) => {
   const Creator = () => {
     if (intenarship) {
@@ -45,25 +45,24 @@ export const BoxProject = ({
     <div className={`boxProject ${className}`}>
       <div className="">
         <h3 className="boxProject__title">{explain}</h3>
-        <div className="boxProject__creator">{Creator()}</div>
+        <div className="boxProject__creator">
+          {intenarship && (withTeam
+            ? "Made by the team"
+            : "Made by me during the internship")}
+        </div>
+      </div>
+      <div className="boxProject__img">
+        <img src={img} alt="dsf"/>
       </div>
       <div className="">
         {link && (
           <a className="boxProject__link" href={link}>
-            {selectedLang === "Russian" ? (
-              <>
-                Нажмите, чтобы увидеть <span>{label ? label : "Сайт"}</span>
-              </>
-            ) : (
-              <>
-                Click to see <span>{label ? label : "website"}</span>
-              </>
-            )}
+            See the: {label ? label : "Website"}
           </a>
         )}
         {linkCode && (
           <a className={"boxProject__linkCode"} href={linkCode}>
-            Click to see code on Github
+            See the code on GitHub
           </a>
         )}
       </div>
