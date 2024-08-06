@@ -17,7 +17,7 @@ interface Props {
   className?: string;
   selectedLang: "English" | "Russian";
 }
-export const AboutMe = ({ className, skills, id, additionalSkills }: Props{ className, selectedLang }: Props) => {
+export const AboutMe = ({ className, skills, id, additionalSkills, selectedLang }: Props) => {
   return (
     <section className="aboutMe" id={id}>
       <div className="aboutMe__left">

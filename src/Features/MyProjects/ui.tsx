@@ -203,4 +203,3 @@ export const MyProjects = ({id}: Props) => {
     </section>
   );
 };
-
