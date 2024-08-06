@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/my-cv-site/static/css/main.8f4e31f9.css",
-    "main.js": "/my-cv-site/static/js/main.70621ce1.js",
-    "static/media/NanumBrushScript-Regular.ttf": "/my-cv-site/static/media/NanumBrushScript-Regular.889e08baf23739dad1f3.ttf",
-    "static/media/firstTrip2.JPG": "/my-cv-site/static/media/firstTrip2.b3dc6059ceee9cd1e871.JPG",
-    "static/media/PTSerif-Italic.ttf": "/my-cv-site/static/media/PTSerif-Italic.d90ee47f324014fc2bae.ttf",
-    "static/media/PTSerif-Regular.ttf": "/my-cv-site/static/media/PTSerif-Regular.6271ca9bf4c029802fc0.ttf",
-    "static/media/PTSerif-BoldItalic.ttf": "/my-cv-site/static/media/PTSerif-BoldItalic.318ae97b9a42b7a6d6ba.ttf",
-    "static/media/RobotoCondensed-ExtraBold.ttf": "/my-cv-site/static/media/RobotoCondensed-ExtraBold.d53d0c919b0bfa8eef6d.ttf",
-    "static/media/RobotoCondensed-Bold.ttf": "/my-cv-site/static/media/RobotoCondensed-Bold.b151d2e8beef32d5bd12.ttf",
-    "static/media/RobotoCondensed-SemiBold.ttf": "/my-cv-site/static/media/RobotoCondensed-SemiBold.f81371a75d39d531979d.ttf",
-    "static/media/RobotoCondensed-Medium.ttf": "/my-cv-site/static/media/RobotoCondensed-Medium.ff190f979bb05ae7bee6.ttf",
-    "static/media/RobotoCondensed-Regular.ttf": "/my-cv-site/static/media/RobotoCondensed-Regular.72f32aff4124468d86a4.ttf",
-    "static/media/main.jpg": "/my-cv-site/static/media/main.61b816f8c1f1c4b7a1f2.jpg",
+    "main.css": "/my-cv-site/static/css/main.64bb951b.css",
+    "main.js": "/my-cv-site/static/js/main.25d7cc0b.js",
+    "static/media/mainLerining.png": "/my-cv-site/static/media/mainLerining.44703bedb0a17a5cf5af.png",
+    "static/media/OurTopRestaurants.png": "/my-cv-site/static/media/OurTopRestaurants.6150659e82a8c5785670.png",
+    "static/media/Oswald-VariableFont_wght.ttf": "/my-cv-site/static/media/Oswald-VariableFont_wght.7cecd0da606d25b0905d.ttf",
+    "static/media/Poppins-Regular.ttf": "/my-cv-site/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Bold.ttf": "/my-cv-site/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/SimpleKanban.png": "/my-cv-site/static/media/SimpleKanban.71279778214fbce7cef2.png",
+    "static/media/TempJS.jpg": "/my-cv-site/static/media/TempJS.c6fa731b4bc22a6af1ac.jpg",
+    "static/media/Temp3.jpg": "/my-cv-site/static/media/Temp3.d3a8b92fdee14cc9e8ce.jpg",
+    "static/media/Temp2.jpg": "/my-cv-site/static/media/Temp2.04c96a3ecec88a2f1602.jpg",
+    "static/media/Temp4.jpg": "/my-cv-site/static/media/Temp4.eddd0f406ad0556d9fff.jpg",
+    "static/media/Temp1.jpg": "/my-cv-site/static/media/Temp1.a5fcbd13073421053589.jpg",
     "static/media/intenarship.jpg": "/my-cv-site/static/media/intenarship.d07bd1cb99a6160d10e9.jpg",
-    "static/media/logo.jpg": "/my-cv-site/static/media/logo.d00b2e1d3e1af6de9ae7.jpg",
+    "static/media/Tickets.jpg": "/my-cv-site/static/media/Tickets.8bb4711a8c041caec147.jpg",
+    "static/media/doodleItems.jpg": "/my-cv-site/static/media/doodleItems.46e1d6cadd91f94bf81b.jpg",
+    "static/media/doodlesmixedround.png": "/my-cv-site/static/media/doodlesmixedround.f1822284ed104c727aa5.png",
+    "static/media/Popup.png": "/my-cv-site/static/media/Popup.4dfc05b0c301271e6365.png",
+    "static/media/Group62.png": "/my-cv-site/static/media/Group62.6f1e4ad811cfcff9911d.png",
+    "static/media/Group2346.png": "/my-cv-site/static/media/Group2346.a7a2e3f9f98122452776.png",
     "index.html": "/my-cv-site/index.html",
-    "main.8f4e31f9.css.map": "/my-cv-site/static/css/main.8f4e31f9.css.map",
-    "main.70621ce1.js.map": "/my-cv-site/static/js/main.70621ce1.js.map"
+    "main.64bb951b.css.map": "/my-cv-site/static/css/main.64bb951b.css.map",
+    "main.25d7cc0b.js.map": "/my-cv-site/static/js/main.25d7cc0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f4e31f9.css",
-    "static/js/main.70621ce1.js"
+    "static/css/main.64bb951b.css",
+    "static/js/main.25d7cc0b.js"
   ]
 }
