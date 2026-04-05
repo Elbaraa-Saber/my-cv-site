@@ -56,7 +56,7 @@ export const ContactMe = ({ id }: Props) => {
           <SecondArrow className="contactMe__arrowIcon" />
           <img className="contactMe__img" src={ContactImg} alt="contact" />
         </div>
-        <form className="contactMe__right" onSubmit={handleSubmit}>
+        {/* <form className="contactMe__right" onSubmit={handleSubmit}>
           <div className="contactMe__info">
             <div className="contactMe__name">
               <label htmlFor="name">Your Name</label>
@@ -109,7 +109,7 @@ export const ContactMe = ({ id }: Props) => {
               Sorry, there was a problem sending your message.
             </p>
           )}
-        </form>
+        </form> */}
       </div>
     </section>
   );

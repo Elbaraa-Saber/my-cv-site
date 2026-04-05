@@ -11,6 +11,8 @@ import Temp3 from "../../Shared/Assets/Imgs/Temp3.jpg";
 import Temp4 from "../../Shared/Assets/Imgs/Temp4.jpg";
 import TempJS from "../../Shared/Assets/Imgs/TempJS.jpg";
 import Tickets from "../../Shared/Assets/Imgs/Tickets.jpg";
+import ExpressJs from "../../Shared/Assets/Imgs/express.png";
+import CShar from "../../Shared/Assets/Imgs/Csharp.png";
 
 interface Props {
   id: string;
@@ -29,14 +31,14 @@ const ProjectsArr = [
   },
   {
     id: 2,
-    by: "ReactTS",
-    intenarship: true,
+    by: "C#",
+    intenarship: false,
     withTeam: false,
-    label: "Dynamic Form",
+    label: "Delivery API",
     explain: "Dynamic Form Parser",
-    link: "https://elbaraa-saber.github.io/daynamicForm",
+    link: "https://github.com/Elbaraa-Saber/DelivaryApi",
     linkCode: "https://github.com/Elbaraa-Saber/daynamicForm",
-    img: Form,
+    img: CShar,
   },
   {
     id: 3,
@@ -94,28 +96,35 @@ const ProjectsArr = [
     linkCode: "https://github.com/Elbaraa-Saber/Fourth-Template_HTML_CSS",
     link: "https://elbaraa-saber.github.io/Fourth-Template_HTML_CSS/",
   },
-  {
-    id: 9,
-    by: "JS",
-    intenarship: false,
-    img: TempJS,
-    explain: "First template with HTML & CSS & JS",
-    linkCode: "https://github.com/Elbaraa-Saber/First-Project-with-JS",
-    link: "https://elbaraa-saber.github.io/First-Project-with-JS/",
-  },
+  // {
+  //   id: 9,
+  //   by: "JS",
+  //   intenarship: false,
+  //   img: TempJS,
+  //   explain: "First template with HTML & CSS & JS",
+  //   linkCode: "https://github.com/Elbaraa-Saber/First-Project-with-JS",
+  //   link: "https://elbaraa-saber.github.io/First-Project-with-JS/",
+  // },
   {
     id: 10,
-    by: "React",
+    by: "ExpressJS",
     intenarship: false,
-    img: Tickets,
-    explain: "First template with ReactJS",
-    linkCode: "https://github.com/Elbaraa-Saber/ticketsapp_ReactJS",
-    link: "https://elbaraa-saber.github.io/ticketsapp_ReactJS/",
+    img: ExpressJs,
+    explain: "Book Store API with NodeJS & Express",
+    linkCode: "https://github.com/Elbaraa-Saber/bookStoreApi",
+  },
+  {
+    id: 11,
+    by: "ExpressJS",
+    intenarship: false,
+    img: ExpressJs,
+    explain: "Courses CRUD operations API with NodeJS & Express",
+    linkCode: "https://github.com/Elbaraa-Saber/courses-crud-operations",
   },
 ];
 export const MyProjects = ({id}: Props) => {
   const [filter, setFilter] = useState<
-    "React" | "HTML+CSS" | "JS" | "ReactTS" | "all"
+    "React" | "HTML+CSS" | "C#" | "ReactTS" | "JS & ExpressJS" |"all"
   >("all");
 
   return (
@@ -135,11 +144,19 @@ export const MyProjects = ({id}: Props) => {
           </li>
           <li
             className={`myProject__choise ${
-              filter === "JS" && "myProject__choise-chicked"
+              filter === "C#" && "myProject__choise-chicked"
             }`}
-            onClick={() => setFilter("JS")}
+            onClick={() => setFilter("C#")}
           >
-            JS
+            C#
+          </li>
+                    <li
+            className={`myProject__choise ${
+              filter === "ExpressJS" && "myProject__choise-chicked"
+            }`}
+            onClick={() => setFilter("ExpressJS")}
+          >
+            ExpressJS
           </li>
           <li
             className={`myProject__choise ${

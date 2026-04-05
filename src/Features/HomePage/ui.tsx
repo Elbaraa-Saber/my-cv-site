@@ -27,7 +27,7 @@ export const HomePage = ({ id }: Props) => {
           <span>Developer</span>
         </h1>
         <div className="homePage__emailLink">
-          <a href="mailto:baraax01@gmail.com" className="homePage__link">
+          <a href="mailto:baraasaber22@gmail.com" className="homePage__link">
             Hire me
           </a>
         </div>

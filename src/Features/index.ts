@@ -8,5 +8,5 @@ export {
     HomePage,
     Experience,
     MyProjects,
-    ContactMe,
+    // ContactMe,
 }

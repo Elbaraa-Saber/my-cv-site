@@ -25,7 +25,7 @@ export const MainPage = () => {
             <AboutMe id="aboutme" skills={skillsArr} additionalSkills={additionalSkills}/>
             <Experience id="myexperience"/>
             <MyProjects id="projects"/>
-            <ContactMe id="contact"/>
+            {/* <ContactMe id="contact"/> */}
         </div>
     )
 }
